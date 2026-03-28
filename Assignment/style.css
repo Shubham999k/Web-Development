@@ -1,0 +1,17 @@
+h1
+{
+    width: 35%;
+    background: center;
+    color: darkblue;
+    background-color: rgb(196, 243, 255);
+    border-radius: 15px;
+    border: 1px dashed blueviolet;
+    border-width: 3px;
+
+    margin:auto;
+    text-align: center;
+}
+.h1MainPage{
+    color: rgb(15, 10, 1);
+    background-color: blanchedalmond;
+}
