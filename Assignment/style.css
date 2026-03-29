@@ -1,6 +1,7 @@
 h1
 {
-    width: 35%;
+    box-shadow: 5px 5px;
+    width: 40%;
     background: center;
     color: darkblue;
     background-color: rgb(196, 243, 255);
@@ -10,8 +11,11 @@ h1
 
     margin:auto;
     text-align: center;
+
 }
 .h1MainPage{
+    width: 35%;
     color: rgb(15, 10, 1);
     background-color: blanchedalmond;
+    border: 5px dotted burlywood;
 }
