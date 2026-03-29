@@ -1,5 +1,5 @@
 body{
-    background-color: blue;
+    background-color: rgb(72, 72, 220);
 }
 
 #mainDiv{
@@ -51,6 +51,7 @@ body{
     border-radius: 5px;
     border-color: blue;
     font: bolder;
+    font-size: medium;
     color: white;
     width: 350px;
     height: 45px;
@@ -61,6 +62,11 @@ body{
 
     
 }
+.addMarginPadding{
+    /* border: 1px solid #000; */
+    margin: 0 5px 5px;
+}
+
 input{
     border: none;
 }
@@ -69,8 +75,14 @@ input{
     width: 350px; 
     border-bottom: 1px solid gray;
     margin: 0 25px;
+    display: flex;
+    align-content: center;
+    justify-items: baseline;
 
 
+}
+.log input{
+    width: 280px;
 }
 .Remember{
     display: flex;
@@ -79,7 +91,7 @@ input{
 }
 #lineblue
 {
-    color: blue;
+    color: rgb(9, 9, 215);
     text-decoration: none;
 }
 #checkforbox{
@@ -87,8 +99,17 @@ input{
     justify-content: space-around;
     align-items: baseline;
     flex-direction: row;
-    row-gap: 30px;
+    gap: 120px;
+
 }
+footer{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
 /* for register */
 .div2{
     background-color: white;
