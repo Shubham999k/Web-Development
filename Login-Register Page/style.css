@@ -1,6 +1,7 @@
 body{
     background-color: blue;
 }
+
 #mainDiv{
     height: 650px;
     width: 1500px;
@@ -8,12 +9,13 @@ body{
     grid-template-columns:auto auto;
     justify-items: center;
     align-items:end;
+
 }
 /* for login */
 .div1{
     background-color:white;
     height: 400px;
-    width: 350px;
+    width: 400px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -22,10 +24,22 @@ body{
 
 
 }
-p{
-    font-size: x-large;
-    color:xxx-large;
+
+/* (Lo) and (Re) with underline */
+.blue-underline{
+    font-family:'Poppins', sans-serif, Arial, sans-serif;
+    font: bolder;
+    
+    text-decoration: underline ;
+    text-decoration-color: blue;
 }
+.gin{
+    font-family:'Poppins', sans-serif, Arial, sans-serif;
+    font: bolder;
+    font-size: xx-large;
+}
+
+
 /* #login{
     background-color:white;
     font-size: xx-large;
@@ -35,15 +49,51 @@ p{
 .LoginButton{
     background-color: blue;
     border-radius: 5px;
+    border-color: blue;
+    font: bolder;
     color: white;
-    width: 300px;
-    height: 35px;
+    width: 350px;
+    height: 45px;
+    display: grid;
+    align-items: center;
+    /* for lines and content */
+    margin: 0 ;
+
+    
+}
+input{
+    border: none;
+}
+.log{
+    border: none;
+    width: 350px; 
+    border-bottom: 1px solid gray;
+    margin: 0 25px;
+
+
+}
+.Remember{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#lineblue
+{
+    color: blue;
+    text-decoration: none;
+}
+#checkforbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: row;
+    row-gap: 30px;
 }
 /* for register */
 .div2{
     background-color: white;
-    height: 550px;
-    width: 450px;
+    height: 500px;
+    width: 400px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
