@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+#navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#innerDiv {
+    border: 1 solid #db0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+
+}
+
+.mid-div {
+    display: flex;
+    gap: 40px;
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.numberButton {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    button {
+        background-color: #125785;
+        padding: 10px;
+        width: 150px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 2px 0 #79b6de;
+        cursor: pointer;
+
+        font-size: 18px;
+    }
+}
+
+/* Main Content Section */
+.contentDiv {
+    background-color: #EAF8FE;
+    margin: 45px 250px;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .headPara {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+            font-size: 35px;
+            text-align: center;
+        }
+    }
+}
+
+.nameNumberDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nameBox {
+        display: flex;
+        flex-direction: column;
+
+        input,
+        select {
+            width: 450px;
+            height: 55px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-size: medium;
+            padding-left: 25px;
+        }
+
+        .name {
+
+            width: 425px;
+
+        }
+
+        .number {
+
+            width: 425px;
+
+        }
+
+        .email {
+
+            width: 525px;
+
+        }
+
+        .qualification {
+
+            width: 325px;
+        }
+
+        .collegename {
+
+            width: 895px;
+        }
+
+        .branch {
+            width: 425px;
+        }
+    }
+}
+
+/* Course Section */
+.courseSourceDiv {
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    .course {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 7px;
+
+    }
+
+    .source {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .nameBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 5px;
+
+            input {
+                width: 425px;
+                height: 55px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                font-size: medium;
+                padding-left: 25px;
+            }
+
+
+        }
+
+        select {
+            width: 450px;
+            height: 55px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-size: medium;
+            padding-left: 25px;
+        }
+    }
+}
+
+/* submit button */
+.btn {
+    display: flex;
+    justify-content: center;
+
+    button{
+        padding: 15px 30px;
+        border-radius: 35px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+    }
+}

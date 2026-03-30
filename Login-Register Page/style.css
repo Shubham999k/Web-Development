@@ -1,17 +1,16 @@
 body{
     background-color: rgb(72, 72, 220);
 }
-
 #mainDiv{
     height: 650px;
     width: 1500px;
+    /* height: 100vh; */
     display: flex;
     grid-template-columns:auto auto;
     justify-content: center;
     align-items:end;
     
 }
-
 /* for login */
 .div1{
     background-color:white;
@@ -23,10 +22,7 @@ body{
     align-items: baseline;
     justify-content: space-evenly;
     margin-right: 80px;
-
-
 }
-
 /* (Lo) and (Re) with underline */
 .blue-underline{
     font-family:'Poppins', sans-serif, Arial, sans-serif;
@@ -40,8 +36,6 @@ body{
     font: bolder;
     font-size: xx-large;
 }
-
-
 /* #login{
     background-color:white;
     font-size: xx-large;
@@ -60,9 +54,7 @@ body{
     display: grid;
     align-items: center;
     /* for lines and content */
-    margin: 0 ;
-
-    
+    margin: 0 ;   
 }
 .addMarginPadding{
     /* border: 1px solid #000; */
@@ -71,7 +63,6 @@ body{
     height: 30px;
     font-size: medium;
 }
-
 /* input-box */
 input{
     border: none;
@@ -116,7 +107,6 @@ footer{
     justify-content: center;
    
 }
-
 /* for register */
 .div2{
     background-color: white;
