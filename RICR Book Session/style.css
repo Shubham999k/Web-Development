@@ -367,7 +367,7 @@ footer {
 
 .sticy{
     position: fixed;
-    bottom: 20px;
+    bottom: 100px;
     right: 20px;
     padding: 10px 30px;
     background: rgb(0, 0, 0);
