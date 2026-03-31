@@ -363,3 +363,18 @@ footer {
         }
     }
 }
+
+
+.sticy{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 30px;
+    background: rgb(0, 0, 0);
+    border: 5px solid black;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    border-radius: 55px 55px 0 55px;
+    cursor: pointer;
+
+}
