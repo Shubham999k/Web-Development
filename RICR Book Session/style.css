@@ -326,6 +326,7 @@ footer {
 
             display: flex;
             justify-content: center;
+            background-color: white;
 
             svg {
                 color: black;
