@@ -1,0 +1,39 @@
+.divv {
+    border: 5px solid black;
+    background-color: rgb(174, 211, 225);
+    display: flex;
+    flex-direction: column;
+
+    .div1 {
+        width: 150px;
+        height: 40px;
+        color: rgb(247, 0, 255);
+        border: none;
+        box-shadow: 5px 5px grey;
+        overflow: hidden;
+        text-wrap-mode: nowrap;
+        transition: width 2s ease-in-out 0.5ms;
+        font-size: xx-large;
+    }
+
+    .div1:hover {
+        width: 600px;
+        background-color: rgb(21, 165, 184);
+        transition: width 2s ease-in-out 0.5ms;
+    }
+}
+
+#div2 {
+    width: 250px;
+    height: 500px;
+    background-color: rgb(174, 211, 225);
+    margin: auto;
+    background-color: rgb(174, 211, 225);
+    transition: transform 2s linear;
+
+
+}
+
+#div2:hover {
+    transform: rotatex(360deg);
+}

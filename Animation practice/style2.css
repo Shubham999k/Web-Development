@@ -1,0 +1,200 @@
+* {
+    margin: 0px;
+    padding: opx;
+}
+
+
+@keyframes shubh {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: skyblue;
+    }
+
+    10% {
+        top: 0px;
+        left: 40px;
+        background-color: blue;
+
+    }
+
+    20% {
+        top: 40px;
+        left: 40px;
+        background-color: skyblue;
+
+    }
+
+    30% {
+        top: 40px;
+        left: 80px;
+        background-color: blue;
+
+    }
+
+    40% {
+        top: 80px;
+        left: 80px;
+         background-color: skyblue;
+    }
+
+    50% {
+        top: 80px;
+        left: 120px;
+         background-color: blue;
+
+    }
+
+    60% {
+        top: 120px;
+        left: 120px;
+         background-color: skyblue;
+
+    }
+
+    70% {
+        top: 120px;
+        left: 160px;
+         background-color: blue;
+
+    }
+
+    80% {
+        top: 160px;
+        left: 160px;
+         background-color: skyblue;
+
+    }
+
+    90% {
+        top: 160px;
+        left: 200px; 
+        background-color: blue;
+
+    }
+
+    100% {
+        top: 200px;
+        left: 200px;
+         background-color: skyblue;
+
+    }
+
+    110% {
+        top: 200px;
+        left: 240px;
+         background-color: blue;
+
+    }
+
+    120% {
+        top: 240px;
+        left: 240px;
+         background-color: skyblue;
+
+    }
+
+    130% {
+        top: 240px;
+        left: 280px;
+         background-color: blue;
+
+    }
+
+    140% {
+        top: 280px;
+        left: 280px;
+         background-color: skyblue;
+
+    }
+
+    150% {
+        top: 280px;
+        left: 320px;
+         background-color: blue;
+
+    }
+
+    160% {
+        top: 320px;
+        left: 320px;
+         background-color: skyblue;
+
+    }
+
+    170% {
+        top: 320px;
+        left: 360px;
+         background-color: blue;
+
+    }
+
+    180% {
+        top: 360px;
+        left: 360px;
+         background-color: skyblue;
+
+    }
+
+    190% {
+        top: 360px;
+        left: 400px;
+         background-color: blue;
+
+    }
+
+    200% {
+        top: 400px;
+        left: 400px;
+
+    }
+
+    210% {
+        top: 400px;
+        left: 440px;
+
+    }
+
+    220% {
+        top: 440px;
+        left: 480px;
+
+    }
+
+    230% {
+        top: 480px;
+        left: 480px;
+
+    }
+
+    240% {
+        top: 480px;
+        left: 520px;
+
+    }
+
+    250% {
+        top: 520px;
+        left: 520px;
+
+    }
+
+}
+
+#box {
+    border: 2px solid black;
+    background-color: blue;
+    box-shadow: 5px 5px skyblue;
+    color: aliceblue;
+    font-size: xx-large;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    padding: 1%;
+    width: 6%;
+    height: 10%;
+    position: absolute;
+    animation: shubh 5s 0s infinite;
+}
