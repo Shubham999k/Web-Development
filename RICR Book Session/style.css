@@ -322,10 +322,15 @@ footer {
         justify-content: center;
         background-color: white;
 
+        a {
 
-        svg {
-            color: black;
-            font-size: larger;
+            display: flex;
+            justify-content: center;
+
+            svg {
+                color: black;
+                font-size: larger;
+            }
         }
     }
 }
