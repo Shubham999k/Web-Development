@@ -14,10 +14,17 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 50px;
+    gap: 20px;
+    a{
+        color: blue;
+        text-decoration: none;
+    }
+    a:hover{
+        color: rgb(15, 171, 15);
+    }
 
     h2 {
-        font-size: 300%;
+        font-size: 100%;
     }
 
     #loginSection {
@@ -45,9 +52,13 @@ nav {
 
             }
 
+
         }
 
-
+        input:focus {
+            border: none;
+            outline: 2px solid #4cda00;
+        }
 
         .remember {
             display: flex;
@@ -56,17 +67,15 @@ nav {
 
 
 
+
         }
 
         .checkboxcolor {
-           
+
             accent-color: green;
         }
 
-        a {
-            color: red;
-            text-decoration: none;
-        }
+
 
         button {
             width: 100%;
@@ -114,16 +123,68 @@ nav {
         align-items: center;
         justify-content: space-around;
 
-        
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            height: 40px;
+            width: 100px;
+            border: 3px solid #4cda00;
+            border-radius: 10px;
+        }
+
+        a:active {
+            background-color: rgb(216, 236, 216);
+        }
+
+
+
 
     }
-    
-    #imageSection {
-        width: 30%;
 
-        img {
-            height: 550px;
 
-        }
+
+
+
+
+
+}
+
+#imageSection {
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    padding: 20px;
+
+    img {
+        height: 350px;
+        width: 200px;
+        animation: move 5s infinite linear;
+
+    }
+
+
+
+
+}
+
+@keyframes move {
+    0% {
+        transform: scale(3px);
+        height: 350px;
+    }
+
+    50% {
+        transform: scale(9px);
+        height: 300px;
+    }
+
+    100% {
+        transform: scale(3px);
+        height: 350px;
     }
 }
