@@ -1,0 +1,54 @@
+:root {
+    --main-color: red;
+    --text-color: green;
+
+}
+
+button {
+    background-color: #125785;
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 5px 5px skyblue;
+    width: 150px;
+    font-size: larger;
+    margin: 20px 30px;
+
+}
+
+button:hover {
+    background-color: rgb(77, 226, 77);
+    box-shadow: 5px 5px rgb(143, 240, 94);
+
+}
+
+button:active {
+    box-shadow: none;
+}
+input{
+    padding: 5px;
+
+}
+input:focus{
+    border: none;
+    outline:1px solid red;
+}
+
+h2 {
+    color: var(--main-color);
+}
+
+p {
+    color: var(--text-color)
+}
+
+th {
+    color: brown
+}
+table{
+    border-collapse: collapse;
+    
+    td,th{
+        border: 1px solid black;
+    }
+}
