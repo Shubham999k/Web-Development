@@ -25,6 +25,7 @@ nav {
     background-color: rgb(207, 250, 146);
 }
 
+
 .outerdiv {
     /* border: 1px solid blue; */
     display: flex;
@@ -33,18 +34,13 @@ nav {
     width: 100%;
     gap: 20px;
 
-    a {
-        color: blue;
-        text-decoration: none;
-    }
 
-    a:hover {
-        color: rgb(15, 171, 15);
-    }
 
     h2 {
         font-size: 100%;
     }
+
+
 
     #loginSection {
         /* border: 1px solid pink; */
@@ -57,6 +53,16 @@ nav {
         gap: 20px;
         width: 30%;
         padding: 25px;
+
+        a {
+            width: fit-content;
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(15, 171, 15);
+        }
 
 
         .email {
@@ -181,7 +187,7 @@ nav {
 
     img {
         height: 350px;
-        width: 200px;
+        width: 300px;
         animation: move 5s infinite linear;
 
     }

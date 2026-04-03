@@ -5,181 +5,204 @@
 
 
 @keyframes shubh {
+
+
     0% {
         top: 0px;
         left: 0px;
         background-color: skyblue;
     }
 
-    10% {
+    3% {
         top: 0px;
         left: 40px;
         background-color: blue;
-
     }
 
-    20% {
+    6% {
         top: 40px;
         left: 40px;
         background-color: skyblue;
-
     }
 
-    30% {
+    9% {
         top: 40px;
         left: 80px;
         background-color: blue;
-
     }
 
-    40% {
+    12% {
         top: 80px;
         left: 80px;
-         background-color: skyblue;
+        background-color: skyblue;
     }
 
-    50% {
+    15% {
         top: 80px;
         left: 120px;
-         background-color: blue;
+        background-color: blue;
+    }
 
+    18% {
+        top: 120px;
+        left: 120px;
+        background-color: skyblue;
+    }
+
+    21% {
+        top: 120px;
+        left: 160px;
+        background-color: blue;
+    }
+
+    24% {
+        top: 160px;
+        left: 160px;
+        background-color: skyblue;
+    }
+
+    27% {
+        top: 160px;
+        left: 200px;
+        background-color: blue;
+    }
+
+    30% {
+        top: 200px;
+        left: 200px;
+        background-color: skyblue;
+    }
+
+    33% {
+        top: 200px;
+        left: 240px;
+        background-color: blue;
+    }
+
+    36% {
+        top: 240px;
+        left: 240px;
+        background-color: skyblue;
+    }
+
+    39% {
+        top: 240px;
+        left: 280px;
+        background-color: blue;
+    }
+
+    42% {
+        top: 280px;
+        left: 280px;
+        background-color: skyblue;
+    }
+
+    45% {
+        top: 280px;
+        left: 320px;
+        background-color: blue;
+    }
+
+    48% {
+        top: 320px;
+        left: 320px;
+        background-color: skyblue;
+    }
+
+    51% {
+        top: 320px;
+        left: 360px;
+        background-color: blue;
+    }
+
+    54% {
+        top: 360px;
+        left: 360px;
+        background-color: skyblue;
+    }
+
+    57% {
+        top: 360px;
+        left: 400px;
+        background-color: blue;
     }
 
     60% {
-        top: 120px;
-        left: 120px;
-         background-color: skyblue;
-
+        top: 400px;
+        left: 400px;
+        background-color: skyblue;
     }
 
-    70% {
-        top: 120px;
-        left: 160px;
-         background-color: blue;
-
+    63% {
+        top: 400px;
+        left: 440px;
+        background-color: blue;
     }
 
-    80% {
-        top: 160px;
-        left: 160px;
-         background-color: skyblue;
+    66% {
+        top: 440px;
+        left: 480px;
+        background-color: skyblue;
+    }
 
+    69% {
+        top: 480px;
+        left: 480px;
+        background-color: blue;
+    }
+
+    72% {
+        top: 480px;
+        left: 520px;
+        background-color: skyblue;
+    }
+
+    75% {
+        top: 520px;
+        left: 520px;
+        background-color: blue;
+    }
+
+    78% {
+        top: 520px;
+        left: 560px;
+        background-color: skyblue;
+    }
+
+    81% {
+        top: 560px;
+        left: 560px;
+        background-color: blue;
+    }
+
+    84% {
+        top: 560px;
+        left: 600px;
+        background-color: skyblue;
+    }
+
+    87% {
+        top: 600px;
+        left: 600px;
+        background-color: blue;
     }
 
     90% {
-        top: 160px;
-        left: 200px; 
+        top: 600px;
+        left: 640px;
+        background-color: skyblue;
+    }
+
+    93% {
+        top: 640px;
+        left: 640px;
         background-color: blue;
-
     }
 
-    100% {
-        top: 200px;
-        left: 200px;
-         background-color: skyblue;
-
-    }
-
-    110% {
-        top: 200px;
-        left: 240px;
-         background-color: blue;
-
-    }
-
-    120% {
-        top: 240px;
-        left: 240px;
-         background-color: skyblue;
-
-    }
-
-    130% {
-        top: 240px;
-        left: 280px;
-         background-color: blue;
-
-    }
-
-    140% {
-        top: 280px;
-        left: 280px;
-         background-color: skyblue;
-
-    }
-
-    150% {
-        top: 280px;
-        left: 320px;
-         background-color: blue;
-
-    }
-
-    160% {
-        top: 320px;
-        left: 320px;
-         background-color: skyblue;
-
-    }
-
-    170% {
-        top: 320px;
-        left: 360px;
-         background-color: blue;
-
-    }
-
-    180% {
-        top: 360px;
-        left: 360px;
-         background-color: skyblue;
-
-    }
-
-    190% {
-        top: 360px;
-        left: 400px;
-         background-color: blue;
-
-    }
-
-    200% {
-        top: 400px;
-        left: 400px;
-
-    }
-
-    210% {
-        top: 400px;
-        left: 440px;
-
-    }
-
-    220% {
-        top: 440px;
-        left: 480px;
-
-    }
-
-    230% {
-        top: 480px;
-        left: 480px;
-
-    }
-
-    240% {
-        top: 480px;
-        left: 520px;
-
-    }
-
-    250% {
-        top: 520px;
-        left: 520px;
-
-    }
 
 }
+
+
 
 #box {
     border: 2px solid black;
@@ -196,13 +219,13 @@
     width: 6%;
     height: 10%;
     position: absolute;
-    animation: shubh 5s 0s infinite alternate;
+    animation: shubh 25s 0s infinite alternate;
 }
 
 #box1 {
     border: 2px solid black;
-    background-color: blue;
-    box-shadow: 5px 5px skyblue;
+    background-color: rgb(0, 255, 47);
+    box-shadow: 5px 5px rgb(135, 235, 183);
     color: aliceblue;
     font-size: xx-large;
 
@@ -214,5 +237,5 @@
     width: 6%;
     height: 10%;
     position: absolute;
-    animation: shubh 5s 0s infinite reverse;
+    animation: shubh 25s 0s infinite alternate-reverse;
 }
