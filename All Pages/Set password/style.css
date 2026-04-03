@@ -20,10 +20,10 @@ button {
     transition: all 0.3s ease;
 }
 
-
 nav {
     background-color: rgb(207, 250, 146);
 }
+
 
 .outerdiv {
     /* border: 1px solid blue; */
@@ -31,21 +31,10 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 20px;
-
-    a {
-        color: blue;
-        width: fit-content;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: rgb(15, 171, 15);
-    }
-
+    gap: 50px;
 
     h2 {
-        font-size: 250%;
+        font-size: 300%;
     }
 
     #loginSection {
@@ -74,20 +63,7 @@ nav {
             }
 
 
-
-
         }
-
-        .resend {
-            a {
-                color: red;
-            }
-
-            a:hover {
-                color: rgb(15, 171, 15);
-            }
-        }
-
 
         input:focus {
             border: none;
@@ -104,6 +80,11 @@ nav {
 
         }
 
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
         .checkboxcolor {
 
             accent-color: green;
@@ -118,7 +99,7 @@ nav {
             border-radius: 5px;
             background-color: blue;
             color: white;
-            box-shadow: 4px 4px grey;
+            box-shadow: 3px 3px grey;
             font-size: large;
 
 
@@ -177,49 +158,53 @@ nav {
 
     }
 
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
 
-
-
-
-
-
-}
-
-#imageSection {
-    width: 30%;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 550px;
-    padding: 20px;
-
-    img {
-        height: 550px;
-        width: 500px;
-        border-radius: 5%;
-        animation: move 5s infinite linear;
-
+    a,
+    button {
+        transition: all 0.3s ease;
     }
 
 
 
 
+    #imageSection {
+        width: 30%;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid black; */
+
+        img {
+            height: 500px;
+            animation: move 5s infinite linear normal;
+
+        }
+
+
+    }
+
 }
+
 
 @keyframes move {
     0% {
         transform: scale(3px);
-        height: 550px;
+        height: 500px;
     }
 
     50% {
         transform: scale(9px);
-        height: 500px;
+        height: 450px;
     }
 
     100% {
         transform: scale(3px);
-        height: 550px;
+        height: 500px;
     }
 }
