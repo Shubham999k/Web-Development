@@ -4,6 +4,23 @@
     font-family: "poppins", sans-serif;
 }
 
+body {
+    opacity: 0;
+    animation: fadeIn 0.7s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+a,
+button {
+    transition: all 0.3s ease;
+}
+
+
 nav {
     background-color: rgb(207, 250, 146);
 }
@@ -15,11 +32,13 @@ nav {
     align-items: center;
     width: 100%;
     gap: 20px;
-    a{
+
+    a {
         color: blue;
         text-decoration: none;
     }
-    a:hover{
+
+    a:hover {
         color: rgb(15, 171, 15);
     }
 
