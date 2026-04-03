@@ -23,9 +23,6 @@ button {
 
 nav {
     background-color: rgb(207, 250, 146);
-    a{
-        width: fit-content;
-    }
 }
 
 .outerdiv {
@@ -34,11 +31,20 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 50px;
-    font-size: small;
+    gap: 20px;
+
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(15, 171, 15);
+    }
+
 
     h2 {
-        font-size: 300%;
+        font-size: 250%;
     }
 
     #loginSection {
@@ -49,38 +55,9 @@ nav {
         width: fit-content;
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 20px;
         width: 30%;
-        padding: 15px;
-
-        .firstname {
-            display: flex;
-            justify-content: space-around;
-            /* border:1px solid black; */
-            gap: 4%;
-
-
-
-            .email {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                /* border: 1px solid blue; */
-                width: 50%;
-
-
-                input {
-                    padding: 10px;
-                    width: auto;
-                    border: 1px solid grey;
-                    border-radius: 5px;
-
-
-                }
-
-
-            }
-        }
+        padding: 25px;
 
 
         .email {
@@ -96,7 +73,20 @@ nav {
             }
 
 
+
+
         }
+
+        .resend {
+            a {
+                color: red;
+            }
+
+            a:hover {
+                color: rgb(15, 171, 15);
+            }
+        }
+
 
         input:focus {
             border: none;
@@ -113,11 +103,6 @@ nav {
 
         }
 
-        a {
-            color: red;
-            text-decoration: none;
-        }
-
         .checkboxcolor {
 
             accent-color: green;
@@ -132,7 +117,7 @@ nav {
             border-radius: 5px;
             background-color: blue;
             color: white;
-            box-shadow: 3px 3px grey;
+            box-shadow: 4px 4px grey;
             font-size: large;
 
 
@@ -194,38 +179,45 @@ nav {
 
 
 
+
+
+
 }
 
 #imageSection {
     width: 30%;
-    height: 450px;
     /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    padding: 20px;
 
     img {
-        height: 450px;
-        border-radius: 10px;
-        animation: move 5s infinite linear normal;
+        height: 550px;
+        width: 400px;
+        animation: move 5s infinite linear;
 
     }
+
+
 
 
 }
 
-
-
 @keyframes move {
     0% {
         transform: scale(3px);
-        height: 450px;
+        height: 550px;
     }
 
     50% {
         transform: scale(9px);
-        height: 400px;
+        height: 500px;
     }
 
     100% {
         transform: scale(3px);
-        height: 450px;
+        height: 550px;
     }
 }
