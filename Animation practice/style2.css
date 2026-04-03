@@ -196,5 +196,23 @@
     width: 6%;
     height: 10%;
     position: absolute;
-    animation: shubh 5s 0s infinite;
+    animation: shubh 5s 0s infinite alternate;
+}
+
+#box1 {
+    border: 2px solid black;
+    background-color: blue;
+    box-shadow: 5px 5px skyblue;
+    color: aliceblue;
+    font-size: xx-large;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    padding: 1%;
+    width: 6%;
+    height: 10%;
+    position: absolute;
+    animation: shubh 5s 0s infinite reverse;
 }
