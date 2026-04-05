@@ -4,32 +4,31 @@
     font-family: "Poppins", sans-serif;
 }
 
-header {
-    font-size: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: white;
-    box-shadow: 0 0 7px 0 gray;
-}
-
-.navbar {
-    margin: 0 50px 0;
-    height: 90px;
+#navBar {
     display: flex;
-    justify-content: space-between;
+    padding: 7px 70px;
     align-items: center;
+    height: 70px;
+    justify-content: space-between;
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 1px 2px 0 rgb(223, 216, 216);
 }
 
-.navInner {
+.logoDiv {
     display: flex;
-    gap: 100px;
+    align-items: center;
+    gap: 90px;
 
-    .navLinks {
-        display: flex;
-        gap: 60px;
-        align-items: center;
+    img {
+        height: 40px;
     }
+}
+
+.features {
+    display: flex;
+    gap: 50px;
 }
 
 a {
@@ -37,249 +36,391 @@ a {
     color: black;
 }
 
-.numberBtn {
+.contact {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     align-items: center;
 
-    #btn {
-        padding: 15px;
+    button {
+        height: 40px;
+        padding: 8px 13px;
         background-color: #125785;
-        color: white;
-        font-size: 20px;
         border: none;
-        border-radius: 8px;
-        box-shadow: 6px 6px 2px 0 #79b6de;
-        cursor: pointer;
+        border-radius: 7px;
+        box-shadow: 5px 5px 2px 0 #79B6DE;
 
         a {
             color: white;
+            font-size: 16px;
         }
     }
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ===== MAIN BUTTON ===== */
-main {
-    padding: 40px 20px;
-}
-
-main button {
-    padding: 15px 25px;
-    border-radius: 30px;
-    color: white;
-    background-color: black;
-    font-size: 16px;
-    box-shadow: 5px 7px 2px 0 gray;
-    cursor: pointer;
-}
-
-/* ===== HERO SECTION ===== */
-.heroSection {
-    margin: 40px auto;
-    padding: 40px 20px;
-    border-radius: 10px;
-    background-color: #eaf8fe;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 90%;
-    max-width: 1000px;
-}
-
-.form-heading {
-    text-align: center;
+form {
+    background-color: #EAF8FE;
+    margin: 30px 21%;
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    color: rgb(105, 105, 105);
+
+    .heading {
+        padding: 40px 0 0 15px;
+        text-align: center;
+        color: black;
+
+        p {
+            font-size: 13px;
+            color: rgb(105, 105, 105);
+        }
+    }
+
 }
 
-/* ===== FORM INPUT ===== */
-.form-input {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.form-input .item {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    flex: 1;
-    min-width: 250px;
-}
-
-.form-input input,
-.form-input select {
-    font-size: 16px;
+.form-item {
     width: 100%;
-    padding: 12px;
-    border-radius: 6px;
-    border: 1px solid gray;
-}
-
-/* remove fixed widths */
-.email,
-.qualification,
-.contact,
-.college,
-.select {
-    width: 100%;
-}
-
-/* ===== SECOND FORM ===== */
-.formInput {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.formInput .first,
-.formInput .second {
-    flex: 1;
-    min-width: 280px;
-}
-
-.first {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.first-checkbox {
-    display: flex;
-    gap: 10px;
-}
-
-.second {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.select,
-.contact-number {
-    width: 100%;
-    padding: 12px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    background-color: #125785;
-}
-
-#footer {
-    padding: 50px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    color: white;
-}
-
-.foot-first,
-.foot-second,
-.foot-third,
-.foot-fourth {
-    flex: 1;
-    min-width: 220px;
-}
-
-.foot-second div,
-.foot-third,
-.foot-fourth {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.foot-first p,
-.foot-second a,
-.foot-third a,
-.foot-fourth a,
-.foot-fourth span {
-    color: rgb(223, 213, 213);
-}
-
-.icons {
-    display: flex;
-    gap: 10px;
-}
-
-.icons a {
-    width: 35px;
-    height: 35px;
-    background: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+    gap: 20px;
+    padding-top: 20px;
 
-    i {
+    input {
+        border: 1px solid #aac7d3;
+        border-radius: 7px;
+        height: 45px;
+        padding-left: 25px;
+    }
+
+    .input {
+        display: grid;
+        gap: 7px;
+        width: 50%;
+
+        select {
+            height: 45px;
+            border: 1px solid #aac7d3;
+            border-radius: 5px;
+            padding-left: 25px;
+        }
+    }
+
+    .email {
+        display: grid;
+        gap: 7px;
+        width: 70%;
+    }
+
+    .qualifiaction {
+        display: grid;
+        gap: 7px;
+        width: 30%;
+    }
+
+    .college {
+        display: grid;
+        gap: 7px;
+        width: 100%;
+    }
+}
+
+.form-item4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.interest {
+    width: 50%;
+    font-size: 14px;
+    display: grid;
+    gap: 5px;
+    padding: 10px 0;
+
+    p {
         color: black;
     }
 
+    div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
 }
 
+.information {
+    width: 50%;
+    font-size: 14px;
+    display: grid;
+    padding: 10px 0;
+    gap: 5px;
 
-/* ===== FOOTER BOTTOM ===== */
-.footer-first {
-    padding: 20px;
+    p b {
+        color: rgb(55, 54, 54);
+    }
+
+    .info {
+        height: 45px;
+        width: 100%;
+        border: 1px solid #aac7d3;
+        border-radius: 7px;
+    }
+
+    input {
+        border: 1px solid #aac7d3;
+        border-radius: 7px;
+        height: 45px;
+        padding-left: 25px;
+    }
+
+    .executive {
+        display: grid;
+    }
 }
 
-.footer-first-inner {
+.submit {
+    text-align: center;
+    padding: 20px 0;
+
+    button {
+        padding: 15px 25px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 16px;
+        border-radius: 50px;
+    }
+}
+
+footer {
+    background-color: #125785;
+    padding: 20px 10%;
+    color: aliceblue;
+
+    .footerDiv1 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        color: #FAFAFA;
+        gap: 60px;
+        padding: 80px 0;
+    }
+
+    a {
+        color: #B8CDDB;
+    }
+}
+
+.quickLinks {
+    display: grid;
+    padding-left: 20px;
+
+    div {
+        display: grid;
+        gap: 8px;
+    }
+}
+
+.otherLinks {
+    padding: 0 20px;
+    display: grid;
+    justify-content: space-evenly;
+
+    .hr {
+        border-top: 1px solid #eee8e8;
+        padding-top: 15px;
+    }
+}
+
+.footerlogo {
+    img {
+        height: 45px;
+        width: 150px;
+        padding-bottom: 20px;
+    }
+
+    color: #B8CDDB;
+}
+
+.copyright {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
+    border-top: 1px solid #eee8e8;
+    padding-top: 20px;
+    color: #B8CDDB;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            padding-right: 15px;
+        }
+    }
+
 }
 
-.footer-first a {
-    color: #eaf8fe;
+.footerInformation {
+    display: grid;
+    gap: 20px;
 }
 
-/* ===== STICKY BUTTON ===== */
-#btnsticy {
+.footermedia {
+    display: flex;
+    gap: 30px;
+    padding-top: 15px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    color: #B8CDDB;
+    gap: 15px;
+}
+
+.address {
+    display: flex;
+    color: #B8CDDB;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.sticy {
     position: fixed;
+    bottom: 100px;
     right: 20px;
-    bottom: 20px;
-    width: 180px;
-    height: 45px;
-    font-size: 14px;
+    padding: 10px 30px;
+    background: rgb(0, 0, 0);
+    border: 3px solid black;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    border-radius: 55px 55px 0 55px;
+    cursor: pointer;
+
+
+
+
+
+
 }
 
-/* ========================= */
-/* 📱 MEDIA QUERY */
-/* ========================= */
+.sticy:hover {
+    background-color: #125785;
 
-/* Tablet */
-@media (max-width: 768px) {
-    .heroSection {
-        padding: 30px 15px;
-    }
 }
 
-/* Mobile */
-@media (max-width: 480px) {
+.sticy:active {
+    border: 1px solid black;
+}
 
-    .heroSection {
-        width: 95%;
+@media (max-width: 992px) {
+    form {
+        margin: 30px 10%;
+        padding: 0 20px;
     }
 
-    .form-heading h1 {
-        font-size: 22px;
+    .form-item {
+        flex-direction: column;
+        align-items: center;
     }
 
-    main button {
+    .form-item .input,
+    .form-item .email,
+    .form-item .qualifiaction,
+    .form-item .college {
         width: 100%;
     }
 
-    #btnsticy {
-        width: 140px;
-        font-size: 12px;
+    .form-item4 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .interest,
+    .information {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        margin: 20px 10px;
+        padding: 0 15px;
+    }
+
+    .heading {
+        padding: 20px 0;
+    }
+
+    input,
+    select {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .submit button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    footer .footerDiv1 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .interest {
+        width: 100%;
+        gap: 14px;
+    }
+
+    .interest div {
+        grid-template-columns: 22px 1fr;
+        gap: 12px;
+    }
+
+    .interest input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    .interest label {
+        font-size: 15px;
+        word-break: break-word;
+    }
+
+    form {
+        overflow: hidden;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer .footerDiv1 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footermedia {
+        justify-content: center;
+    }
+
+    .icon,
+    .address {
+        justify-content: center;
     }
 }
