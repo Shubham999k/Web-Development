@@ -1,297 +1,285 @@
-/* ================= GLOBAL ================= */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 0 7px 0 gray;
+}
+
+.navbar {
+    margin: 0 50px 0;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navInner {
+    display: flex;
+    gap: 100px;
+
+    .navLinks {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.numberBtn {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+    #btn {
+        padding: 15px;
+        background-color: #125785;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 6px 6px 2px 0 #79b6de;
+        cursor: pointer;
+
+        a {
+            color: white;
+        }
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: #f5f7fa;
+/* ===== MAIN BUTTON ===== */
+main {
+    padding: 40px 20px;
 }
 
-/* ================= NAVBAR ================= */
-#navbar {
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 60px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
-
-#innerDiv {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.logo-image {
-    height: 45px;
-}
-
-.mid-div {
-    display: flex;
-    gap: 25px;
-}
-
-.mid-div a {
-    text-decoration: none;
-    color: #222;
-    font-size: 16px;
-    font-weight: 500;
-    position: relative;
-    transition: 0.3s;
-}
-
-.mid-div a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: #125785;
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s;
-}
-
-.mid-div a:hover::after {
-    width: 100%;
-}
-
-.mid-div a:hover {
-    color: #125785;
-}
-
-/* RIGHT SIDE */
-.numberButton {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.numberButton span {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-}
-
-.numberButton button {
-    background: #125785;
+main button {
+    padding: 15px 25px;
+    border-radius: 30px;
     color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
+    background-color: black;
+    font-size: 16px;
+    box-shadow: 5px 7px 2px 0 gray;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.numberButton button:hover {
-    background: #0d4568;
-    transform: translateY(-2px);
-}
-
-/* ================= MAIN CONTENT ================= */
-.contentDiv {
-    background: #EAF8FE;
+/* ===== HERO SECTION ===== */
+.heroSection {
     margin: 40px auto;
-    padding: 30px;
-    border-radius: 20px;
-    width: 100%;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: #eaf8fe;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
     max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
 }
 
-.headPara {
+.form-heading {
     text-align: center;
-}
-
-.headPara h2 {
-    font-size: 32px;
-}
-
-.headPara p {
-    font-size: 15px;
-}
-
-/* FORM */
-.nameNumberDiv {
-    display: flex;
-    gap: 20px;
-}
-
-.nameBox {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.nameBox input,
-.nameBox select {
-    width: 100%;
-    height: 50px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding-left: 15px;
-}
-
-/* COURSE */
-.courseSourceDiv {
-    display: flex;
-    gap: 20px;
-}
-
-.course,
-.source {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.course input {
-    accent-color: green;
-}
-
-/* BUTTON */
-.btn {
+/* ===== FORM INPUT ===== */
+.form-input {
     display: flex;
-    justify-content: center;
-}
-
-.btn button {
-    padding: 12px 30px;
-    border-radius: 25px;
-    background: black;
-    color: white;
-    cursor: pointer;
-}
-
-/* ================= FOOTER ================= */
-footer {
-    margin-top: 80px;
-    background: #125785;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    gap: 30px;
-    color: white;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-footer>div {
+.form-input .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.form-input input,
+.form-input select {
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+/* remove fixed widths */
+.email,
+.qualification,
+.contact,
+.college,
+.select {
+    width: 100%;
+}
+
+/* ===== SECOND FORM ===== */
+.formInput {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.formInput .first,
+.formInput .second {
+    flex: 1;
+    min-width: 280px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.first-checkbox {
+    display: flex;
+    gap: 10px;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.select,
+.contact-number {
+    width: 100%;
+    padding: 12px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #125785;
+}
+
+#footer {
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: white;
+}
+
+.foot-first,
+.foot-second,
+.foot-third,
+.foot-fourth {
     flex: 1;
     min-width: 220px;
 }
 
-footer p,
-footer a {
-    color: #B8CDDB;
-    font-size: 14px;
-}
-
-.quick div,
-.other div {
+.foot-second div,
+.foot-third,
+.foot-fourth {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-}
-
-.information div {
-    display: flex;
-    align-items: center;
     gap: 10px;
 }
 
-/* FOOTER BOTTOM */
-.footerhr {
-    background: #125785;
-    display: flex;
-    justify-content: center;
+.foot-first p,
+.foot-second a,
+.foot-third a,
+.foot-fourth a,
+.foot-fourth span {
+    color: rgb(223, 213, 213);
 }
 
-.footerhr .bottom {
-    width: 90%;
-    padding: 20px 0;
-    border-top: 1px solid #5A8AAA;
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons a {
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    i {
+        color: black;
+    }
+
+}
+
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-first {
+    padding: 20px;
+}
+
+.footer-first-inner {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* ================= RESPONSIVE ================= */
+.footer-first a {
+    color: #eaf8fe;
+}
+
+/* ===== STICKY BUTTON ===== */
+#btnsticy {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 180px;
+    height: 45px;
+    font-size: 14px;
+}
+
+/* ========================= */
+/* 📱 MEDIA QUERY */
+/* ========================= */
 
 /* Tablet */
-@media (max-width: 992px) {
-    #navbar {
-        padding: 15px 30px;
+@media (max-width: 768px) {
+    .heroSection {
+        padding: 30px 15px;
     }
 }
 
 /* Mobile */
-@media (max-width: 768px) {
-
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    #innerDiv {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    .mid-div {
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-    }
-
-    .nameNumberDiv {
-        flex-direction: column;
-    }
-
-    .courseSourceDiv {
-        flex-direction: column;
-    }
-
-    footer {
-        flex-direction: column;
-        padding: 30px 20px;
-    }
-
-    .footerhr .bottom {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .numberButton {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    .numberButton button {
-        width: 100%;
-    }
-}
-
-/* Small Mobile */
 @media (max-width: 480px) {
-    .logo-image {
-        height: 38px;
+
+    .heroSection {
+        width: 95%;
     }
 
-    .headPara h2 {
-        font-size: 24px;
+    .form-heading h1 {
+        font-size: 22px;
+    }
+
+    main button {
+        width: 100%;
+    }
+
+    #btnsticy {
+        width: 140px;
+        font-size: 12px;
     }
 }
