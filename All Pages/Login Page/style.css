@@ -14,10 +14,13 @@ body {
         opacity: 1;
     }
 }
+
 a,
 button {
     transition: all 0.3s ease;
+
 }
+
 
 nav {
     background-color: rgb(207, 250, 146);
@@ -148,14 +151,13 @@ nav {
             border-radius: 10px;
         }
 
-        a:active {
-            background-color: rgb(216, 236, 216);
-        }
+
 
 
 
 
     }
+
 
 
 
