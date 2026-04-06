@@ -54,6 +54,11 @@ a {
             font-size: 16px;
         }
     }
+
+    button:active {
+        box-shadow: none;
+
+    }
 }
 
 form {
@@ -194,6 +199,16 @@ form {
         border: none;
         font-size: 16px;
         border-radius: 50px;
+        box-shadow: 0 5px grey;
+
+    }
+
+    button:hover {
+        background-color: #125785;
+    }
+
+    button:active {
+        box-shadow: none;
     }
 }
 
@@ -359,12 +374,12 @@ footer {
 
     input,
     select {
-        width: 100%;
+        width: 90%;
         font-size: 14px;
     }
 
     .submit button {
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -422,5 +437,106 @@ footer {
     .icon,
     .address {
         justify-content: center;
+    }
+}
+/* Default Styling (Desktop) */
+#navBar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logoDiv
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.features a
+{
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ================== Tablet View ================== */
+@media (max-width: 992px)
+{
+    #navBar
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .logoDiv
+    {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .features
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .contact
+    {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* ================== Mobile View ================== */
+@media (max-width: 600px)
+{
+    #navBar
+    {
+        padding: 10px 15px;
+    }
+
+    .logoDiv
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .features
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .features a
+    {
+        font-size: 14px;
+    }
+
+    .contact
+    {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .contact button
+    {
+        width: 100%;
     }
 }
