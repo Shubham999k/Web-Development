@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cravings - Home</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav style="background-color: var(--color-primary)">
+      <div class="d-flex align-items-center justify-content-between mx-5">
+        <div>
+          <a href="">
+            <img id="logoimg" class="my-1" src="craveing logo.png" alt="" />
+          </a>
+        </div>
+        <div class="d-flex align-items-center gap-2 mt-0">
+          <a id="Login" class="btn rounded-1 mt-1" href="">Login</a>
+          <a id="Register" class="btn rounded-1 mt-1" href="">Register</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section
+      class="hero d-flex align-items-center justify-content-center text-center text-white"
+    >
+      <div class="hero-content container">
+        <h1 class="display-5 fw-bold">Your Favorite Food, Delivered Fast</h1>
+        <p class="mb-4">
+          Order from thousands of restaurants and get it delivered to your
+          doorstep
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 mb-4 flex-wrap">
+          <a href="register.html" class="btn btn-danger px-4">Sign Up</a>
+          <a href="order-now.html" class="btn btn-light px-4">Order Now</a>
+        </div>
+
+        <!-- Search Bar -->
+        <div
+          class="bg-white rounded-3 d-flex align-items-center px-3 py-2 mx-auto"
+          style="max-width: 900px"
+        >
+          <i class="bi bi-search text-muted me-2"></i>
+          <input
+            type="text"
+            class="form-control border-0 shadow-none"
+            placeholder="Search restaurants or dishes..."
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESTAURANTS ===== -->
+    <section
+      class="py-5"
+      style="background: linear-gradient(var(--color-primary), white)"
+    >
+      <div class="container">
+        <h2 class="text-white text-center fw-bold">Featured Restaurants</h2>
+        <p class="text-white text-center mb-4">6 restaurants available</p>
+
+        <div class="row g-4">
+          <!-- CARD 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow border-0 rounded-4">
+              <img
+                src="images/restaurant-card.jpg"
+                class="card-img-top"
+                style="height: 180px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Spicy Treat</h5>
+                <p class="text-muted">Delicious Indian food</p>
+                <p>⭐ 4.5 · 120 reviews</p>
+                <span class="badge bg-light text-dark">Indian</span>
+                <p class="mt-2"><i class="bi bi-geo-alt"></i> Bhopal</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow border-0 rounded-4">
+              <img
+                src="images/restaurant-card.jpg"
+                class="card-img-top"
+                style="height: 180px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Pizza Hub</h5>
+                <p class="text-muted">Italian Pizza</p>
+                <p>⭐ 4.7 · 200 reviews</p>
+                <span class="badge bg-light text-dark">Pizza</span>
+                <p class="mt-2"><i class="bi bi-geo-alt"></i> Indore</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow border-0 rounded-4">
+              <img
+                src="images/restaurant-card.jpg"
+                class="card-img-top"
+                style="height: 180px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h5 class="fw-bold">Sweet World</h5>
+                <p class="text-muted">Desserts & Cakes</p>
+                <p>⭐ 4.3 · 95 reviews</p>
+                <span class="badge bg-light text-dark">Desserts</span>
+                <p class="mt-2"><i class="bi bi-geo-alt"></i> Delhi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="text-white pt-5" style="background-color: #3f3f46">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <h5>Cravings</h5>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Quick Links</h6>
+            <p>
+              <a href="index.html" class="text-white text-decoration-none"
+                >Home</a
+              >
+            </p>
+            <p>
+              <a href="about.html" class="text-white text-decoration-none"
+                >About</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Support</h6>
+            <p>
+              <a href="contact.html" class="text-white text-decoration-none"
+                >Contact</a
+              >
+            </p>
+            <p>
+              <a href="feedback.html" class="text-white text-decoration-none"
+                >Feedback</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <h6>Legal</h6>
+            <p>
+              <a
+                href="privacy-policy.html"
+                class="text-white text-decoration-none"
+                >Privacy</a
+              >
+            </p>
+            <p>
+              <a
+                href="terms-of-service.html"
+                class="text-white text-decoration-none"
+                >Terms</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-light mt-4" />
+
+        <p class="text-center">© 2026 Cravings. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root {
+    --color-primary: #c2410c;
+    --color-base-100: #fff8f1;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-base-100);
+}
+
+nav {
+    height: 65px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 999;
+}
+
+#logoimg {
+    width: 87px;
+}
+
+.hero {
+    height: 85vh;
+    background: url("images/hero-bg.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+input.form-control::placeholder {
+    color: #c2410c;
+
+}
+
+/* login button */
+#Login {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 4px 12px;
+
+}
+
+#Login:hover {
+    border: 1px solid white;
+}
+
+/* register button */
+#Register {
+    cursor: pointer;
+    text-decoration: none;
+    color: #c2410c;
+    background: white;
+    font-size: 15px;
+    padding: 4px 12px;
+
+}
+
+#Register:hover {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+}
