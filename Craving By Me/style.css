@@ -242,7 +242,7 @@ input.form-control::placeholder {
 }
 
 #maroonh1,
-#card1maroon {
+#card1maroon ,#partner-btn{
     color: #c2410c;
 }
 
@@ -268,4 +268,23 @@ input.form-control::placeholder {
 /* ===== FOOTER ===== */
 footer {
     background-color: var(--color-neutral);
+    a{
+        text-decoration: none;
+        color:white
+    }
+    hr{
+        color:white;
+        size: 2px;
+    }
+    div{
+        a{
+
+        }
+    }
+    a:hover{
+        color: #c2410c;
+    }
+}
+.circlelogo{
+    width: 128px;
 }
