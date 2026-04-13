@@ -1,299 +1,151 @@
-/* ===== GLOBAL ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, sans-serif;
-}
-
-#logoimg {
-    height: 55px;
-}
-
 /* ===== ROOT COLORS ===== */
 :root {
     --color-primary: #c2410c;
     --color-base-100: #fff8f1;
     --color-neutral: #3f3f46;
+    --color-base-300: #e7d9c9;
 }
 
-/* ===== BODY ===== */
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    font-family: 'Inter', sans-serif;
     background-color: var(--color-base-100);
-    background: linear-gradient(to right, #c2410c, #e76f51);
     overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== CONTAINER ===== */
+.custom-container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 /* ===== NAVBAR ===== */
-.navbar {
+.navbar-custom {
+    min-height: 64px;
     background-color: var(--color-primary);
+}
+
+#logoimg {
+    height: 50px;
+}
+
+#Login {
+    color: white;
+}
+
+#Register {
+    background: white;
+    color: var(--color-primary);
 }
 
 /* ===== HERO SECTION ===== */
 .hero {
     position: relative;
-    height: 85vh;
-    overflow: hidden;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    z-index: 10;
-}
-
-#signup {
-    background: #c2410c;
-}
-
-/* Carousel full height */
 .carousel,
 .carousel-inner,
-.carousel-item,
-.carousel-item img {
-    height: auto;
-    width: 100%;
+.carousel-item {
+    height: 85vh;
 }
 
 .carousel-item img {
+    height: 100%;
     object-fit: cover;
 }
 
+/* Overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.hero-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Search */
+.hero-search {
+    max-width: 700px;
+}
+
+/* Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    z-index: 3;
+}
+
+/* ===== RESTAURANT SECTION ===== */
+.restaurant-section {
+    background: linear-gradient(var(--color-primary), white);
+}
 
 .section-title {
     color: white;
     font-weight: 700;
 }
 
-.card-custom {
-    border-radius: 15px;
-    height: 100%;
-    width: 100%;
+.section-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== CARD (IMPORTANT FIX HERE 😏) ===== */
+.restaurant-card {
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+    transition: all 0.35s ease;
+    background: #f4ebe4;
+    cursor: pointer;
 
-    display: flex;
-    flex-direction: column;
+    /* 💫 soft visible shadow */
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.10);
 }
 
-.card-body {
-    background-color: #FFF8F1;
+/* ===== CARD ===== */
+.restaurant-card {
+    border-radius: 18px;
+    overflow: hidden;
+    background: #f4ebe4;
+    cursor: pointer;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    /* 💫 base shadow (visible but soft) */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-hr {
-    color: rgb(199, 197, 197);
+/* 🔥 HOVER (REAL FIX) */
+.restaurant-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    /* 👈 SMALL SCALE */
+
+    /* 👇 THIS is the magic */
+    box-shadow: 0px 25px 60px rgba(0, 0, 0, 0.18);
 }
 
-.card-custom:hover {
-    transform: translateY(-5px);
-}
-
-.card-img {
-    height: 200px;
+/* ===== IMAGE ===== */
+.restaurant-card img {
+    height: 220px;
     object-fit: cover;
 }
 
-.rating {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #c2410c;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.tag {
-    background: #E7D9C9;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    margin-right: 5px;
-}
-
+/* ===== BUTTON ===== */
 .btn-custom {
-    background: #c2410c;
-
-    color: white;
-    border-radius: 8px;
-    width: 100%;
+    transition: background 0.2s ease;
 }
 
 .btn-custom:hover {
-    background: #c7582c;
-    color: white;
-}
-
-#section {
-    width: auto;
-    align-self: center;
-}
-
-.hero {
-    height: 85vh;
-    overflow: hidden;
-}
-
-.carousel-item img {
-    height: 85vh;
-    object-fit: cover;
-}
-
-.hero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.hero-content {
-    z-index: 2;
-}
-
-/* Dark overlay */
-
-
-/* Hero content center */
-
-
-/* ===== SEARCH BAR ===== */
-input.form-control::placeholder {
-    color: #E09C7E;
-    opacity: 1;
-}
-
-/* ===== CARDS ===== */
-.card {
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* ===== BUTTONS ===== */
-#Login {
-    color: white;
-    font-size: 15px;
-    padding: 4px 12px;
-}
-
-#Login:hover {
-    border: 1px solid white;
-}
-
-#Register {
-    color: #c2410c;
-    background: white;
-    padding: 4px 12px;
-}
-
-#Register:hover {
-    border: 1px solid white;
-    color: white;
-    background: transparent;
-}
-
-#cravingInNumbers {
-    background-color: #FFF8F1;
-
-}
-
-
-#cravingInNumbers #rounded-3 {
-    color: black;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-    box-shadow: 50px 50px grey;
-    will-change: transform;
-}
-
-#cravingInNumbers #rounded-3:hover {
-    transform: scale(1.007);
-}
-
-#ratingcard1,
-#ratingcard2,
-#ratingcard3 {
-    color: black;
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
-    will-change: transform;
-}
-
-#ratingcard1:hover,
-#ratingcard2:hover,
-#ratingcard3:hover {
-    box-shadow: 0px 2px 0 0 rgba(0, 0, 0, 0.1);
-    transform: scale(1.007);
-}
-
-#cravingCard div {
-    background-color: #FFFFFF;
-    width: 250px;
-    height: fit-content;
-}
-
-#maroonh1,
-#card1maroon,
-#partner-btn {
-    color: #c2410c;
-}
-
-#card1maroon,
-#card3maroon {
-    background-color: #c2410c;
-}
-
-#card2pink {
-    background-color: #D9468F;
-}
-
-#pinkh1,
-.bg-pink {
-    color: #D9468F;
-}
-
-/* Hover Effect */
-#cravingCard div:hover {
-    transform: scale(1.01);
-}
-
-/* ===== FOOTER ===== */
-footer {
-    background-color: var(--color-neutral);
-
-    a {
-        text-decoration: none;
-        color: white
-    }
-
-    hr {
-        color: white;
-        size: 2px;
-    }
-
-    div {
-        a {}
-    }
-
-    a:hover {
-        color: #c2410c;
-    }
-}
-
-.circlelogo {
-    width: 128px;
+    background-color: #a63608;
 }
