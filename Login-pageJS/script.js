@@ -11,7 +11,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event)
 
     let message = document.getElementById("message");
 
-    if(username === "admin" && password === "1234")
+    if(username === "admin" && password === "12345")
     {
         message.innerText = "Login Successful";
         message.classList.remove("text-danger");
