@@ -21,9 +21,21 @@ body {
 
 
 /* ===== NAVBAR FIX ===== */
-.navbar-custom .container-fluid {
+/* .navbar-custom .container-fluid {
     padding-left: 12px !important;
     padding-right: 12px !important;
+} */
+/* #login:focus{
+    cursor: pointer;
+} */
+#Login:hover {
+    border: 1px solid white;
+}
+
+#Register:hover {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
 }
 
 /* ===== SMALL SCREEN (MOBILE) ===== */
@@ -40,6 +52,7 @@ body {
     .navbar-custom .btn {
         font-size: 14px;
         padding: 6px 10px;
+
     }
 
     /* hero text resize */
@@ -290,7 +303,8 @@ p {
     font-weight: 500;
 }
 
-.btn-custom:hover,#signup {
+.btn-custom:hover,
+#signup {
     background: #dc4a10;
     color: white;
 }
@@ -449,3 +463,79 @@ p {
 /* Above home section is completed */
 
 /* Login Section */
+/* card background like screenshot */
+/* ===== LOGIN CARD ===== */
+.login-card {
+    background: #f3f0ec;
+    border-radius: 14px;
+    max-width: 380px;
+    padding: 18px 16px;
+    /* compact */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== SECTION HEIGHT CONTROL (85vh use case) ===== */
+.login-section {
+    /* height: 85vh; */
+    display: flex;
+    align-items: center;
+}
+
+/* ===== INPUT STYLE ===== */
+.custom-input {
+    border: 1.5px solid #e2d3c3;
+    border-radius: 8px;
+    padding: 8px 10px;
+    /* compact */
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+.custom-section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    color: #c2410c;
+}
+
+/* ===== INPUT FOCUS (PREMIUM FEEL 🔥) ===== */
+.custom-input:focus {
+    border-color: #c2410c;
+    box-shadow: 0 0 0 2px rgba(194, 65, 12, 0.8);
+    outline: none;
+}
+
+/* ===== LABEL COMPACT ===== */
+.form-label {
+    margin-bottom: 3px;
+}
+
+/* ===== BUTTON TIGHT ===== */
+.btn-custom {
+    padding: 6px 0;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* ===== HR LINE ===== */
+.login-card {
+    background: #f3f0ec;
+    border-radius: 14px;
+    max-width: 450px;
+    padding: 24px 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== SMALL TEXT CONTROL ===== */
+.small {
+    font-size: 12px !important;
+}
+
+/* ===== EYE ICON POSITION FIX ===== */
+#eyeIcon {
+    font-size: 14px;
+    cursor: pointer;
+}
