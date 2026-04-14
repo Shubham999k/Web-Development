@@ -218,7 +218,7 @@ input[type="radio"] {
 
 /* ===== CARD ===== */
 .restaurant-card {
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     background: #f3e9df;
     position: relative;
@@ -569,4 +569,84 @@ h2 {
 #getstartbtn {
     background-color: white;
     color: #c2410c;
+}
+
+/* order section */
+/* ===== SEARCH WRAPPER ===== */
+#search {
+    position: sticky;
+    top: 0px;
+    /* navbar height ke equal */
+    z-index: 998;
+    background-color: #F2EAE2;
+}
+
+#searchBar {
+    border: 1px solid #c2410c;
+
+    input::placeholder {
+        background: transparent;
+        color: #c2410c;
+
+    }
+}
+
+/* ===== INPUT ===== */
+.search-wrapper input {
+    background: transparent;
+}
+
+/* ===== ICON ===== */
+.search-wrapper i {
+    color: #c2410c;
+    font-size: 16px;
+}
+
+/* cards */
+.restaurant-card-main img {
+    height: 150px;
+}
+
+@media (min-width: 768px) {
+    .restaurant-card-main img {
+        height: 170px;
+    }
+}
+
+.restaurant-card-main {
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(64, 62, 62, 0.96);
+    /* transition: box-shadow 0.25s ease; */
+}
+
+.restaurant-card-main:hover {
+    box-shadow: 0 4px 10px rgba(64, 62, 62, 0.09);
+}
+
+
+.restaurant-body hr {
+    border: none;
+    height: 2px;
+    /* 👈 1px se 2px karo */
+    background-color: #bfae9d;
+    /* 👈 thoda darker for contrast */
+    opacity: 1;
+    transform: scaleY(1);
+    /* 👈 fix scaling distortion */
+}
+
+/* 🔥 HOVER (≈ 5px SIZE INCREASE FEEL 😏) */
+
+/* .restaurant-card-main hr {
+    background: linear-gradient(transparent, #d8c4b2, transparent);
+} */
+
+/* ===== IMAGE ===== */
+.restaurant-card-main img {
+    height: 170px;
+    /* 👈 compact */
+    object-fit: cover;
 }
