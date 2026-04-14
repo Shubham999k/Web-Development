@@ -122,18 +122,27 @@ p {
     height: 56px;
     width: 87px;
 
+    /* max-height: 61px;
+    max-width: 92px; */
+
     transform-origin: center;
-    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition: transform 0.9s ease, opacity 0.9s ease;
 }
 
 /* 🔥 YOUR CUSTOM POINT */
-@media (max-width: 333px) {
+@media (max-width: 250px) {
     #logoimg {
         position: absolute;
         /* 👈 MAIN FIX */
-        transform: scaleX(0);
+        transform: scalex(0);
         opacity: 0;
     }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #c2410c;
+    /* your theme color */
 }
 
 #Login {
@@ -538,4 +547,26 @@ h2 {
 #eyeIcon {
     font-size: 14px;
     cursor: pointer;
+}
+
+/* About Section */
+.bg-corevalues {
+    background-color: #e7d9c3;
+}
+
+.bg-team {
+    background-color: #c2410c;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.bg-cta {
+    background-color: #c2410c;
+}
+
+#getstartbtn {
+    background-color: white;
+    color: #c2410c;
 }
