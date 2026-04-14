@@ -30,10 +30,8 @@
   <body>
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar-custom sticky-top">
-      <div class="container-fluid px-3 px-md-5 py-1">
-        <div
-          class="d-flex justify-content-between align-items-center flex-wrap"
-        >
+      <div class="container-fluid px-2 px-sm-3 px-md-4 px-lg-5 py-1">
+        <div class="d-flex justify-content-between align-items-center">
           <img
             id="logoimg"
             src="./assets/images/craveing logo.png"
@@ -131,7 +129,7 @@
         class="hero-overlay d-flex align-items-center justify-content-center text-center"
       >
         <div class="container px-3">
-          <h1 class="fw-bold display-5">
+          <h1 class="fw-bold display-5 lh-1">
             Your Favorite Food,<br />Delivered Fast
           </h1>
 
@@ -141,18 +139,23 @@
 
           <!-- Buttons -->
           <div class="d-flex justify-content-center gap-3 my-4 flex-wrap">
-            <button class="btn btn-danger btn-lg">Sign Up</button>
-            <button class="btn btn-light btn-lg">Order Now</button>
+            <button id="signup" class="btn btn-sm px-4 py-3 rounded-3">
+              Sign Up
+            </button>
+            <button class="btn btn-light btn-sm px-4 py-3 rounded-3">
+              Order Now
+            </button>
           </div>
 
           <!-- Search -->
           <div
-            class="bg-white rounded-3 d-flex align-items-center px-3 py-2 mx-auto w-100 hero-search"
+            class="bg-white rounded-3 d-flex align-items-center px-3 py-1 mx-auto hero-search"
           >
             <i class="bi bi-search text-muted me-2"></i>
             <input
+              id="placeholder"
               class="form-control border-0 shadow-none"
-              placeholder="Search restaurants..."
+              placeholder="Search restaurants or dishes"
             />
           </div>
         </div>
@@ -160,7 +163,7 @@
     </section>
     <!-- ===== RESTAURANT SECTION ===== -->
     <section class="restaurant-section py-5">
-      <div class="container custom-container px-3 px-md-4">
+      <div class="container px-3 px-md-4">
         <h2 class="text-white fw-bold text-center text-md-start">
           Featured Restaurants
         </h2>
@@ -462,7 +465,7 @@
         </div>
 
         <!-- Cards -->
-        <div class="row g-4 px-5 py-4">
+        <div class="row g-4 px-2 px-md-3 px-lg-0 py-4">
           <!-- CARD 1 -->
           <div class="col-lg-4 col-md-6 col-12">
             <div class="testimonial-card p-4 rounded-3 h-100">
@@ -556,9 +559,9 @@
         <!-- Main Row -->
         <div class="row g-5 text-md-start">
           <!-- Logo -->
-          <div class="col-lg-3 col-md-12 w-auto me-5">
+          <div class="col-lg-3 col-md-12">
             <img
-              class="footer-logo img-fluid mb-3 me-5"
+              class="footer-logo img-fluid mb-3"
               src="./assets/images/circleLogo-DpCri5UD.png"
               alt=""
             />

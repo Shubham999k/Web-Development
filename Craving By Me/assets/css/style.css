@@ -19,9 +19,79 @@ body {
     overflow-x: hidden;
 }
 
+
+/* ===== NAVBAR FIX ===== */
+.navbar-custom .container-fluid {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+/* ===== SMALL SCREEN (MOBILE) ===== */
+@media (max-width: 333px) {
+
+    /* logo collapse smooth */
+    #logoimg {
+        transform: scaleX(0);
+        opacity: 0;
+        position: absolute;
+    }
+
+    /* buttons full width */
+    .navbar-custom .btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    /* hero text resize */
+    h1.display-5 {
+        font-size: 28px;
+    }
+
+    .hero-search {
+        max-width: 100%;
+    }
+}
+
+/* ===== MEDIUM SCREEN FIX (IMPORTANT 🔥) ===== */
+@media (max-width: 768px) {
+
+    /* remove overflow spacing */
+    .container,
+    .container-fluid {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    /* cards spacing fix */
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* stat cards full width */
+    .stat-card {
+        max-width: 100%;
+    }
+}
+
+/* ===== CARD RESPONSIVE ===== */
+.restaurant-card img {
+    height: 150px;
+}
+
+@media (min-width: 768px) {
+    .restaurant-card img {
+        height: 170px;
+    }
+}
+
+/* ===== TEXT FIX ===== */
+p {
+    word-wrap: break-word;
+}
+
 /* ===== CONTAINER ===== */
 .custom-container {
-    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -31,8 +101,26 @@ body {
     background-color: var(--color-primary);
 }
 
+
 #logoimg {
-    height: 50px;
+    /*  height: 56px;
+    width: 87px; */
+
+    height: 56px;
+    width: 87px;
+
+    transform-origin: center;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* 🔥 YOUR CUSTOM POINT */
+@media (max-width: 333px) {
+    #logoimg {
+        position: absolute;
+        /* 👈 MAIN FIX */
+        transform: scaleX(0);
+        opacity: 0;
+    }
 }
 
 #Login {
@@ -77,7 +165,11 @@ body {
 
 /* Search */
 .hero-search {
-    max-width: 700px;
+    max-width: 900px;
+}
+
+#placeholder::placeholder {
+    color: #f6b095;
 }
 
 /* Controls */
@@ -108,9 +200,7 @@ body {
     overflow: hidden;
     background: #f3e9df;
     position: relative;
-
     transition: transform 0.25s ease, box-shadow 0.25s ease;
-
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
 
 
@@ -140,11 +230,8 @@ body {
 
 }
 
-hr {
-    border: none;
-    height: 1px;
+.restaurant-card hr {
     background: linear-gradient(transparent, #d8c4b2, transparent);
-
 }
 
 /* ===== IMAGE ===== */
@@ -203,7 +290,7 @@ hr {
     font-weight: 500;
 }
 
-.btn-custom:hover {
+.btn-custom:hover,#signup {
     background: #dc4a10;
     color: white;
 }
@@ -226,13 +313,13 @@ hr {
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
-    transition: 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 
 .stat-card:hover,
 #ratingcard1 {
-    transform: translatez(15px);
+    transform: translatez(-6px);
     box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.12);
     transition: 0.25s ease;
 }
@@ -280,7 +367,7 @@ hr {
 }
 
 .testimonial-card:hover {
-    transform: translatez(6px);
+    transform: translatez(-6px);
     box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.12);
 }
 
@@ -358,4 +445,5 @@ hr {
     /* white line */
     margin: 18px 0;
 }
+
 /* Above home section is completed */
