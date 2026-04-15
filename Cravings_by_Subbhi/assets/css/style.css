@@ -39,7 +39,7 @@ body {
 }
 
 /* ===== SMALL SCREEN (MOBILE) ===== */
-@media (max-width: 333px) {
+@media (max-width: 300px) {
 
     /* logo collapse smooth */
     #logoimg {
@@ -318,6 +318,11 @@ input[type="radio"] {
     color: white;
 }
 
+#signup:hover {
+    background: #c3410e;
+    color: white;
+}
+
 /* card in numbers */
 /* ===== SECTION BACKGROUND ===== */
 #cravingInNumbers {
@@ -483,6 +488,12 @@ input[type="radio"] {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
+#bgimage {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* ===== SECTION HEIGHT CONTROL (85vh use case) ===== */
 .login-section {
     /* height: 85vh; */
@@ -586,7 +597,7 @@ h2 {
 
     input::placeholder {
         background: transparent;
-        color: #c2410c;
+        color: #E09C7E;
 
     }
 }
@@ -649,4 +660,16 @@ h2 {
     height: 170px;
     /* 👈 compact */
     object-fit: cover;
+}
+
+/* restaurant dashboard */
+/* ===== SECTION HEIGHT ===== */
+.custom-section1 {
+    height: calc(100vh - 64px);
+    overflow: hidden;
+}
+
+/* ===== OVERLAY + BLUR ===== */
+.overlay {
+    backdrop-filter: blur(17px);
 }
