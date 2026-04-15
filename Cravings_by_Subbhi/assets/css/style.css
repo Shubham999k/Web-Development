@@ -511,13 +511,15 @@ input[type="radio"] {
     transition: all 0.25s ease;
 }
 
-.custom-section {
-    height: 90vh;
+.custom-section,
+.help-section {
+    min-height: 85vh;
     display: flex;
     align-items: center;
+    padding: 10px 0;
 }
 
-h2 {
+h2,h3 {
     color: #c2410c;
 }
 
@@ -671,5 +673,19 @@ h2 {
 
 /* ===== OVERLAY + BLUR ===== */
 .overlay {
-    backdrop-filter: blur(17px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.45) 25%,
+            rgba(0, 0, 0, 0.05) 50%,
+            /* center almost clear */
+            rgba(0, 0, 0, 0.45) 75%,
+            rgba(0, 0, 0, 0.65) 100%);
 }
+
+.faq-item:hover {
+    background-color: #9EA0A2;
+}
+
