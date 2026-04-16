@@ -218,12 +218,15 @@ input[type="radio"] {
 
 /* ===== CARD ===== */
 .restaurant-card {
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
     background: #f3e9df;
     position: relative;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+
 
 
 }
@@ -258,7 +261,7 @@ input[type="radio"] {
 
 /* ===== IMAGE ===== */
 .restaurant-card img {
-    height: 170px;
+    height: 190px;
     /* 👈 compact */
     object-fit: cover;
 }
@@ -390,13 +393,13 @@ input[type="radio"] {
 /* ===== CARD ===== */
 .testimonial-card {
     background: #FFF8F1;
-    transition: 0.25s ease;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.35s ease;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.11);
 }
 
 .testimonial-card:hover {
     transform: translatez(-6px);
-    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.11);
 }
 
 /* ===== AVATAR ===== */
@@ -441,7 +444,7 @@ input[type="radio"] {
 
 /* logo */
 .footer-logo {
-    width: 125px;
+    width: 128px;
     /* 👈 perfect size */
     height: auto;
     object-fit: contain;
@@ -453,8 +456,8 @@ input[type="radio"] {
 .footer-copy {
     color: white;
     text-decoration: none;
-    font-weight: lighter;
-    font-size: medium;
+    font-weight: normal;
+    font-size: 14px;
     margin-bottom: 6px;
     transition: 0.2s ease;
 }
@@ -471,7 +474,6 @@ input[type="radio"] {
     height: 0.5px;
     background-color: #ffffff;
     /* white line */
-    margin: 18px 0;
 }
 
 /* Above home section is completed */
