@@ -322,23 +322,33 @@ input[type="radio"] {
 
 .btn-register-login {
     background-color: #c2410c;
+    border: none;
+    color: white;
     border-radius: 10px;
     padding: 8px;
     /* 👈 compact */
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .btn-register-login:hover {
-    background-color:rgb(183, 61, 13) ;
+    background-color: rgb(183, 61, 13);
     color: white;
 }
-#link{
+
+/* .btn-register-login:active {
+    background-color: rgb(183, 61, 13);
+    color: white;
+} */
+
+#link {
     text-decoration: none;
 
 }
-#link:hover{
-    text-decoration:1px underline;
+
+#link:hover {
+    text-decoration: 1px underline;
 }
 
 #signup:hover {
