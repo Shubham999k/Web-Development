@@ -519,7 +519,9 @@ input[type="radio"] {
     padding: 10px 0;
 }
 
-h2,h3 {
+h2,
+h3,
+.text-main {
     color: #c2410c;
 }
 
@@ -689,3 +691,52 @@ h2,h3 {
     background-color: #9EA0A2;
 }
 
+/* privay section */
+.uline {
+    text-decoration: none;
+
+}
+
+.uline:hover {
+    text-decoration: 1px underline;
+
+}
+
+.lookingFor {
+    color: #E0AC98;
+}
+
+.lookingPara {
+    color: #E0AC98;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.privacyBg {
+    background-color: #FFF8F1;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+
+}
+
+.cursor-pointer:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.term-toggle {
+    transition: 0.2s;
+}
+
+.term-toggle:hover {
+    background: #f8f9fa;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.term-toggle[aria-expanded="true"] .arrow {
+    transform: rotate(180deg);
+}
