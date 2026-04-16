@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -305,20 +306,38 @@ input[type="radio"] {
 }
 
 /* ===== BUTTON ===== */
+
+
 .btn-custom {
     background-color: #c2410c;
+    color: white;
     border-radius: 10px;
     padding: 8px;
     /* 👈 compact */
     font-size: 14px;
     font-weight: 500;
+    border: none;
 }
+
 
 .btn-custom:hover,
 #signup {
     background: #dc4a10;
     color: white;
 }
+
+.btn-custom:active {
+    background-color: #a93409 !important;
+    color: white;
+}
+
+.btn-custom:focus {
+    background-color: #c2410c;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+
 
 .btn-register-login {
     background-color: #c2410c;
@@ -778,4 +797,10 @@ h3,
 
 .term-toggle[aria-expanded="true"] .arrow {
     transform: rotate(180deg);
+}
+
+/* view menu */
+.menu-card-top {
+    background: #FFF8F1;
+
 }
