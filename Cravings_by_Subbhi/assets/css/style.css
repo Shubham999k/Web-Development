@@ -750,6 +750,29 @@ h3,
 }
 
 /* privay section */
+/* default state */
+.nav-link-custom {
+    color: #000;
+    /* 👈 force black text */
+    transition: 0.3s;
+}
+
+/* hover state */
+.nav-link-custom:hover {
+    opacity: 1 !important;
+    color: #c2410c;
+    /* maroon */
+}
+
+/* icon hover */
+.nav-link-custom:hover .icon-custom {
+    color: #c2410c;
+}
+
+.blur-layer {
+    backdrop-filter: blur(1px);
+}
+
 .uline {
     text-decoration: none;
 
@@ -792,7 +815,13 @@ h3,
 }
 
 .arrow {
+    display: inline-block;
     transition: transform 0.3s ease;
+}
+
+/* open state */
+[data-bs-toggle="collapse"]:not(.collapsed) .arrow {
+    transform: rotate(180deg);
 }
 
 .term-toggle[aria-expanded="true"] .arrow {
