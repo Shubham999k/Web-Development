@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+
+}
+
+#contentCarousel {
+    transform: translateY(-40px);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    /*  circle yahin se banta hai */
+
+}
+
+.custom-indicators {
+    position: absolute;
+    /* allow custom positioning */
+    left: 12%;
+    /* same as container padding */
+    top: 360px;
+    /* bottom: 12px; */
+
+    /*  adjust until perfect under button */
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 1;
+    margin-right: 8px;
+}
+
+.custom-indicators .active {
+    background-color: #ffc107;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #ffc107;
+}
+
+/* offcards section */
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+/* 🔥 Hover zoom */
+.offer-card img {
+    transition: 0.4s;
+}
+
+.offer-card:hover img {
+    transform: scale(1.1);
+}
+
+/* mennu section */
+/* image hover */
+/* curved cut (main difference) */
+/* curved cut */
+.menu-top {
+    border-bottom-left-radius: 60px;
+}
+.menu-top {
+    height: 200px;                 /* 🔥 fixed space */
+    border-bottom-left-radius: 60px;
+    background-color: #F1F2F3;
+    
+}
+
+
+/* image size + hover */
+.menu-img {
+    width: 140px;
+    transition: 0.4s ease;
+}
+
+.menu-img:hover {
+    transform: scale(1.1);
+}
+/* footer */
+.social-icons{
+    color: black;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* about */
+.variety-section{
+    margin-top: 79px;
+}
+.about-section {
+    margin-top: 75px;
+    position: relative;
+   
+}
