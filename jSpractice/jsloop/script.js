@@ -80,22 +80,29 @@
 
 // below is jump case
 
-let choice = 3;
-switch (choice) {
-  case 1: {
-    console.log("Tea");
-    break
-  }
-  case 2: {
-    console.log("Coffee");
-    break
-  }
-  case 3: {
-    console.log("Lassi");
-    break
-  }
-  default: {
-    console.log("Paani");
+// let choice = 3;
+// switch (choice) {
+//   case 1: {
+//     console.log("Tea");
+//     break
+//   }
+//   case 2: {
+//     console.log("Coffee");
+//     break
+//   }
+//   case 3: {
+//     console.log("Lassi");
+//     break
+//   }
+//   default: {
+//     console.log("Paani");
 
-  }
+//   }
+// }
+let a = 80, b = 20;
+function sum(x, y) {
+  z = x + y;
+  console.log(z);
+
 }
+sum(a, b);
