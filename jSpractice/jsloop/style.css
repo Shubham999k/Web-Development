@@ -1,6 +1,10 @@
 .divHide{
     display: none;
+    background-color: blue;
+    color: beige;
 }
 .divShow{
     display: block;
+    background-color: blue;
+    color: beige;
 }
