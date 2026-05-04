@@ -1,14 +1,6 @@
-let abc = function () {
-    console.log("Hello World");
+function Submit(){
+    const fn = document.getElementById("fullName").value;
 
+    document.getElementById("myData").innerText= fn;
+    document.getElementById("fullName").value="";
 }
-console.log(abc);
-abc();
-
-const addsum = (a, b) => a + b;
-console.log(addsum(5, 6));
-console.log(abc);
-abc();
-
-const sub = (a, b) => a - b;
-console.log(addsum(5, 6));
