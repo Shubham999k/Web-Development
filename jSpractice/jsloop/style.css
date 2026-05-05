@@ -75,8 +75,7 @@ input:focus {
 /* ===== BUTTON ===== */
 button {
     width: 100%;
-    padding: 10px;
-    border: none;
+    border: 0;
     border-radius: 12px;
     background: linear-gradient(135deg, #ff6a00, #ee0979);
     color: white;
@@ -100,6 +99,12 @@ button:hover {
     border-radius: 12px;
     font-weight: 500;
 }
+#result1.show {
+    background: #e3f2fd;
+    border: #0d47a1 solid 2px;
+    color: #0d47a1;
+}
+
 
 /* ===== HIDDEN ===== */
 .hide {
@@ -123,6 +128,7 @@ button:hover {
 .result3 {
     color: #1b5e20;
     background: #e8f5e9;
+    border: #1b5e20 solid 2px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     animation: fadeIn 0.4s ease;
 }
