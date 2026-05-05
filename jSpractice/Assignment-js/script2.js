@@ -7,7 +7,7 @@
 //     document.getElementById("dataCard").classList.add("divShow");
 //     document.getElementById("dataCard").classList.remove("divHide");
 
-    
+
 // }
 
 // ================= ASSIGNMENT 1 =================
@@ -51,3 +51,57 @@ function submit3() {
 
   document.getElementById("result3").classList.add("result3");
 }
+
+
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (var i = 0; i < 6; i++) {
+  console.log(arr[i]);
+}
+console.log(arr);
+arr[2] = arr[2] + 10;
+console.log(arr);
+arr = [];
+console.log(arr);
+
+arr.push(1);
+
+console.log(arr);
+
+arr.pop();
+
+console.log(arr);
+
+arr.unshift(6);
+
+console.log(arr);
+
+arr.shift();
+
+console.log(arr); 
+console.log(arr.at(4));
+
+console.log(arr.indexOf(7));
+console.log(arr.includes(76));
+
+
+let unr = [34,56,32,21,8,76,43,78,42]
+console.log(unr);
+unr.sort();
+console.log(unr);
+
+unr.reverse();
+console.log(unr);
+
+
+
+
+
+
+
+
+
+
+
+
+
