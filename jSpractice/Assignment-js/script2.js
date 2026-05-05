@@ -86,13 +86,17 @@ console.log(arr.includes(76));
 
 
 let unr = [34,56,32,21,8,76,43,78,42]
-console.log(unr);
 unr.sort();
 console.log(unr);
 
 unr.reverse();
 console.log(unr);
 
+let arr1 = [2, 1,11,9, 10, 5];
+
+arr1.sort((a, b) => a - b);
+
+console.log(arr1);
 
 
 
