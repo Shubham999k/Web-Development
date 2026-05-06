@@ -1,0 +1,122 @@
+/* @import "tailwindcss"; */
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  /* font-family: ; */
+}
+
+.bgImg {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+
+  img {
+    object-fit: cover;
+
+  }
+
+}
+
+.overlayContent {
+  position: absolute;
+  top: 25%;
+  left: 6%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  margin: 12px;
+  width: 100%;
+  /* border: 1px solid black; */
+
+}
+
+label {
+  font-weight: bolder;
+}
+
+.inputs {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid burlywood;
+  border-radius: 5px;
+
+}
+
+.remember {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px;
+}
+
+.checkbox1 {
+  margin-right: 4px;
+}
+
+.a1 {
+  color: rgb(238, 99, 7);
+  text-decoration: none;
+}
+
+.login {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(238, 99, 7);
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  div {
+    padding: 0 10px;
+    width: fit-content;
+  }
+
+  hr {
+    border: 0.1% solid grey;
+    width: 25%;
+    /* padding: 0 10px; */
+  }
+}
+
+.createAccount {
+  text-decoration: none;
+  margin: 20px 0 0 0;
+  color: rgb(238, 99, 7);
+}
+
+.createAccount:hover {
+  text-decoration: underline;
+
+}

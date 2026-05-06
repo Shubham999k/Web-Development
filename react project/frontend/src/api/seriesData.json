@@ -1,0 +1,181 @@
+[
+  {
+    "id": 1,
+
+    "img_url": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4",
+
+    "name": "Squid Game",
+
+    "rating": "8.5/10",
+
+    "summary": "Hundreds of players accept a strange invitation to compete in children's games for a huge cash prize.",
+
+    "genre": "Thriller",
+
+    "cast": "Lee Jung-jae, Wi Ha-joon",
+
+    "watch_url": "https://www.netflix.com/title/81040344"
+  },
+
+  {
+    "id": 2,
+
+    "img_url": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba",
+
+    "name": "All Of Us Are Dead",
+
+    "rating": "7.6/10",
+
+    "summary": "A high school becomes ground zero for a zombie virus outbreak.",
+
+    "genre": "Horror",
+
+    "cast": "Park Ji-hoo, Yoon Chan-young",
+
+    "watch_url": "https://www.netflix.com/title/81237994"
+  },
+
+  {
+    "id": 3,
+
+    "img_url": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c",
+
+    "name": "Vincenzo",
+
+    "rating": "8.4/10",
+
+    "summary": "A Korean-Italian mafia lawyer returns to Korea and fights against corrupt villains.",
+
+    "genre": "Crime",
+
+    "cast": "Song Joong-ki, Jeon Yeo-been",
+
+    "watch_url": "https://www.netflix.com/title/81365087"
+  },
+
+  {
+    "id": 4,
+
+    "img_url": "https://images.unsplash.com/photo-1513106580091-1d82408b8cd6",
+
+    "name": "Crash Landing On You",
+
+    "rating": "8.7/10",
+
+    "summary": "A South Korean heiress accidentally lands in North Korea after a paragliding accident.",
+
+    "genre": "Romance",
+
+    "cast": "Hyun Bin, Son Ye-jin",
+
+    "watch_url": "https://www.netflix.com/title/81159258"
+  },
+
+  {
+    "id": 5,
+
+    "img_url": "https://images.unsplash.com/photo-1517602302552-471fe67acf66",
+
+    "name": "Kingdom",
+
+    "rating": "8.3/10",
+
+    "summary": "A mysterious plague turns people into zombies during the Joseon era.",
+
+    "genre": "Historical Horror",
+
+    "cast": "Ju Ji-hoon, Bae Doona",
+
+    "watch_url": "https://www.netflix.com/title/80180171"
+  },
+
+  {
+    "id": 6,
+
+    "img_url": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc",
+
+    "name": "True Beauty",
+
+    "rating": "8.1/10",
+
+    "summary": "A high school girl masters makeup to hide her insecurities and gains popularity.",
+
+    "genre": "Comedy Romance",
+
+    "cast": "Moon Ga-young, Cha Eun-woo",
+
+    "watch_url": "https://www.netflix.com/"
+  },
+
+  {
+    "id": 7,
+
+    "img_url": "https://images.unsplash.com/photo-1518929458119-e5bf444c30f4",
+
+    "name": "Weak Hero Class 1",
+
+    "rating": "8.5/10",
+
+    "summary": "A brilliant but quiet student fights against school violence using intelligence and strategy.",
+
+    "genre": "Action Drama",
+
+    "cast": "Park Ji-hoon, Choi Hyun-wook",
+
+    "watch_url": "https://www.netflix.com/"
+  },
+
+  {
+    "id": 8,
+
+    "img_url": "https://images.unsplash.com/photo-1505685296765-3a2736de412f",
+
+    "name": "Business Proposal",
+
+    "rating": "8.0/10",
+
+    "summary": "A woman goes on a blind date pretending to be her friend and meets her company CEO.",
+
+    "genre": "Romantic Comedy",
+
+    "cast": "Ahn Hyo-seop, Kim Se-jeong",
+
+    "watch_url": "https://www.netflix.com/title/81509440"
+  },
+
+  {
+    "id": 9,
+
+    "img_url": "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+
+    "name": "Sweet Home",
+
+    "rating": "7.9/10",
+
+    "summary": "Humans suddenly transform into terrifying monsters while survivors fight to stay alive.",
+
+    "genre": "Horror Thriller",
+
+    "cast": "Song Kang, Lee Jin-wook",
+
+    "watch_url": "https://www.netflix.com/title/81061734"
+  },
+
+  {
+    "id": 10,
+
+    "img_url": "https://images.unsplash.com/photo-1516280440614-37939bbacd81",
+
+    "name": "Itaewon Class",
+
+    "rating": "8.2/10",
+
+    "summary": "An ex-convict opens a restaurant in Itaewon to take revenge against a powerful company.",
+
+    "genre": "Drama",
+
+    "cast": "Park Seo-joon, Kim Da-mi",
+
+    "watch_url": "https://www.netflix.com/title/81193309"
+  }
+]
