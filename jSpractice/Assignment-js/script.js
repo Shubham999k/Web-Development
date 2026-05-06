@@ -5,7 +5,7 @@
 // console.log("Table of 2 given below");
 // for (var i = 1; i <= 10; i++) {
 //     console.log(i * 4);
-
+          
 // }
 // console.log("Below is indexing")
 // let a = [24, 58, 33, 86, 45, 78, 25, 96, 46, 58, 23]
