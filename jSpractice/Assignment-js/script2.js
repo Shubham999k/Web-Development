@@ -97,6 +97,31 @@ arr1.sort((a, b) => a - b);
 
 console.log(arr1);
 
+// using json
+const data = [
+
+    {
+        id: 1,
+        name: "Shubbhi Tubbhi",
+        contact: "9876543210",
+        address: "Bhopal"
+    },
+
+    {
+        id: 2,
+        name: "Priya Verma",
+        contact: "9123456780",
+        address: "Indore"
+    }
+
+];
+
+console.log(data);
+
+console.log(data[0].name);
+
+console.log(data[1].contact);
+
 
 
 
