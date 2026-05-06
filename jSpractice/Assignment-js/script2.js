@@ -11,7 +11,7 @@
 // }
 
 // ================= ASSIGNMENT 1 =================
-function submit1() {
+function submit1() { 
 
   const name = document.getElementById("name").value;
   const city = document.getElementById("city").value;
