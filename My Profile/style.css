@@ -1,0 +1,20 @@
+body{
+    margin:7%;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table{
+    background-color: azure;
+    border-collapse: collapse;
+    td,th{
+        border: 5px solid rgb(14, 87, 148);
+    }
+    p{
+        color: rgb(0, 86, 246);
+        font-family: "poppins"sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+    }
+}

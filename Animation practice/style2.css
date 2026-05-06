@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: opx;
+}
+
+
+@keyframes shubh {
+
+
+    0%   { top: 0px;   left: 0px;   background-color: skyblue; }
+    3%   { top: 0px;   left: 40px;  background-color: blue; }
+
+    6%   { top: 40px;  left: 40px;  background-color: skyblue; }
+    9%   { top: 40px;  left: 80px;  background-color: blue; }
+
+    12%  { top: 80px;  left: 80px;  background-color: skyblue; }
+    15%  { top: 80px;  left: 120px; background-color: blue; }
+
+    18%  { top: 120px; left: 120px; background-color: skyblue; }
+    21%  { top: 120px; left: 160px; background-color: blue; }
+
+    24%  { top: 160px; left: 160px; background-color: skyblue; }
+    27%  { top: 160px; left: 200px; background-color: blue; }
+
+    30%  { top: 200px; left: 200px; background-color: skyblue; }
+    33%  { top: 200px; left: 240px; background-color: blue; }
+
+    36%  { top: 240px; left: 240px; background-color: skyblue; }
+    39%  { top: 240px; left: 280px; background-color: blue; }
+
+    42%  { top: 280px; left: 280px; background-color: skyblue; }
+    45%  { top: 280px; left: 320px; background-color: blue; }
+
+    48%  { top: 320px; left: 320px; background-color: skyblue; }
+    51%  { top: 320px; left: 360px; background-color: blue; }
+
+    54%  { top: 360px; left: 360px; background-color: skyblue; }
+    57%  { top: 360px; left: 400px; background-color: blue; }
+
+    60%  { top: 400px; left: 400px; background-color: skyblue; }
+    63%  { top: 400px; left: 440px; background-color: blue; }
+
+    66%  { top: 440px; left: 480px; background-color: skyblue; }
+    69%  { top: 480px; left: 480px; background-color: blue; }
+
+    72%  { top: 480px; left: 520px; background-color: skyblue; }
+    75%  { top: 520px; left: 520px; background-color: blue; }
+
+    78%  { top: 520px; left: 560px; background-color: skyblue; }
+    81%  { top: 560px; left: 560px; background-color: blue; }
+
+    84%  { top: 560px; left: 600px; background-color: skyblue; }
+    87%  { top: 600px; left: 600px; background-color: blue; }
+
+    90%  { top: 600px; left: 640px; background-color: skyblue; }
+    93%  { top: 640px; left: 640px; background-color: blue; }
+
+    96%  { top: 640px; left: 680px; background-color: skyblue; }
+    100% { top: 720px; left: 720px; background-color: blue; }
+
+}
+
+
+
+#box {
+    border: 2px solid black;
+    background-color: blue;
+    box-shadow: 5px 5px skyblue;
+    color: aliceblue;
+    font-size: xx-large;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    padding: 1%;
+    width: 6%;
+    height: 10%;
+    position: absolute;
+    animation: shubh 15s 0s infinite alternate;
+}
+
+#box1 {
+    border: 2px solid black;
+    background-color: rgb(0, 255, 47);
+    box-shadow: 5px 5px rgb(135, 235, 183);
+    color: aliceblue;
+    font-size: xx-large;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    padding: 1%;
+    width: 6%;
+    height: 10%;
+    position: absolute;
+    animation: shubh 15s 0s infinite alternate-reverse;
+}

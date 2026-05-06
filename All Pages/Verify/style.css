@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 0.7s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+a,
+button {
+    transition: all 0.3s ease;
+}
+
+
+nav {
+    background-color: rgb(207, 250, 146);
+}
+
+.outerdiv {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+    a {
+        color: blue;
+        width: fit-content;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(15, 171, 15);
+    }
+
+
+    h2 {
+        font-size: 250%;
+    }
+
+    #loginSection {
+        /* border: 1px solid pink; */
+        /* background-color: rgb(234, 248, 234); */
+        border-radius: 4%;
+        /* padding: 3%;    */
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 30%;
+        padding: 25px;
+
+
+        .email {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                padding: 10px;
+                width: 95%;
+                border: 1px solid grey;
+                border-radius: 5px;
+
+            }
+
+
+
+
+        }
+
+        .resend {
+            a {
+                color: red;
+            }
+
+            a:hover {
+                color: rgb(15, 171, 15);
+            }
+        }
+
+
+        input:focus {
+            border: none;
+            outline: 2px solid #4cda00;
+        }
+
+        .remember {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+
+        }
+
+        .checkboxcolor {
+
+            accent-color: green;
+        }
+
+
+
+        button {
+            width: 100%;
+            padding: 3%;
+            border: blue;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            box-shadow: 4px 4px grey;
+            font-size: large;
+
+
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: #4cda00;
+            border: 2px blue;
+            box-shadow: none;
+        }
+
+        .signup {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            hr {
+                width: 170px;
+            }
+        }
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            height: 40px;
+            width: 100px;
+            border: 3px solid #4cda00;
+            border-radius: 10px;
+        }
+
+        a:active {
+            background-color: rgb(216, 236, 216);
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+#imageSection {
+    width: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    padding: 20px;
+
+    img {
+        height: 550px;
+        width: 500px;
+        border-radius: 5%;
+        animation: move 5s infinite linear;
+
+    }
+
+
+
+
+}
+
+@keyframes move {
+    0% {
+        transform: scale(3px);
+        height: 550px;
+    }
+
+    50% {
+        transform: scale(9px);
+        height: 500px;
+    }
+
+    100% {
+        transform: scale(3px);
+        height: 550px;
+    }
+}
