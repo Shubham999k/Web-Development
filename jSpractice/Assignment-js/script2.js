@@ -22,8 +22,7 @@ function submit1() {
   document.getElementById("result1").classList.remove("hide");
   document.getElementById("result1").classList.add("show");
 }
-
-
+     
 // ================= ASSIGNMENT 2 =================
 function submit2() {
 
