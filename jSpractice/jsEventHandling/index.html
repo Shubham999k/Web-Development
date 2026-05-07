@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="bulb1">BULB</div>
+      <div id="btn">
+        <button id="bulbOn" onclick="BulbOn()">ON</button>
+        <button id="bulbOff" onclick="BulbOff()">OFF</button>
+      </div>
+      <br />
+      <input type="color" id="bulb1Color" />
+
+      <br /><br />
+      <div id="HeadingDiv">
+        <div id="Heading">
+          <h1 id="H1">This is Heading</h1>
+          <p id="para1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+            culpa sequi expedita nam ducimus suscipit saepe nesciunt id pariatur
+            eius omnis cum itaque eligendi accusamus voluptas, quibusdam, nisi
+            iste molestias!
+          </p>
+          <p id="para2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+            culpa sequi expedita nam ducimus suscipit saepe nesciunt id pariatur
+            eius omnis cum itaque eligendi accusamus voluptas, quibusdam, nisi
+            iste molestias!
+          </p>
+        </div>
+        <div class="ColorSection">
+          <div>
+            <label for="">Background COlor :</label>
+            <input type="color" name="" id="bgColor" />
+          </div>
+          <div>
+            <label for="">Heading COlor :</label>
+            <input type="color" name="" id="textColor" />
+          </div>
+          <div>
+            <label for="">Paragraph COlor :</label>
+            <input type="color" name="" id="paraColor" />
+          </div>
+          <div id="btmbtn"><button onclick="resetAll()" id="reset">RESET ALL</button></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

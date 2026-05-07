@@ -1,0 +1,87 @@
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+#btn {
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+    gap: 20px;
+
+}
+input{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 2px solid rgb(249, 9, 49);
+
+}
+#bulbOn{
+    background-color: rgb(110, 237, 91);
+    color: aliceblue;
+    padding: 15px 20px;
+    border-radius: 10px;
+   
+}
+#bulbOn:hover,#bulbOff:hover,#reset:hover{
+     box-shadow: 5px 5px 10px rgb(46, 47, 46);
+}
+#bulbOff,#reset{
+    background-color: rgb(241, 119, 119);
+    color: aliceblue;
+    padding: 15px 20px;
+    border-radius: 10px
+}
+
+#bulb1 {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+#HeadingDiv{
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    border: 1px solid green;
+    height: 300px;
+    width: 800px;
+    
+    #Heading{
+        width: 500px;
+        height: 300px;
+        border-right: 1px solid black;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+}
+#btmbtn{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+}
+.ColorSection{
+    padding:25px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: end;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+    }
+
+}

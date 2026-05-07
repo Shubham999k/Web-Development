@@ -11,7 +11,7 @@
 // }
 
 // ================= ASSIGNMENT 1 =================
-function submit1() { 
+function submit1() {
 
   const name = document.getElementById("name").value;
   const city = document.getElementById("city").value;
@@ -22,7 +22,7 @@ function submit1() {
   document.getElementById("result1").classList.remove("hide");
   document.getElementById("result1").classList.add("show");
 }
-     
+
 // ================= ASSIGNMENT 2 =================
 function submit2() {
 
@@ -77,21 +77,21 @@ console.log(arr);
 
 arr.shift();
 
-console.log(arr); 
+console.log(arr);
 console.log(arr.at(4));
 
 console.log(arr.indexOf(7));
 console.log(arr.includes(76));
 
 
-let unr = [34,56,32,21,8,76,43,78,42]
+let unr = [34, 56, 32, 21, 8, 76, 43, 78, 42]
 unr.sort();
 console.log(unr);
 
 unr.reverse();
 console.log(unr);
 
-let arr1 = [2, 1,11,9, 10, 5];
+let arr1 = [2, 1, 11, 9, 10, 5];
 
 arr1.sort((a, b) => a - b);
 
@@ -100,19 +100,19 @@ console.log(arr1);
 // using json
 const data = [
 
-    {
-        id: 1,
-        name: "Shubbhi Tubbhi",
-        contact: "9876543210",
-        address: "Bhopal"
-    },
+  {
+    id: 1,
+    name: "Shubbhi Tubbhi",
+    contact: "9876543210",
+    address: "Bhopal"
+  },
 
-    {
-        id: 2,
-        name: "Priya Verma",
-        contact: "9123456780",
-        address: "Indore"
-    }
+  {
+    id: 2,
+    name: "Priya Verma",
+    contact: "9123456780",
+    address: "Indore"
+  }
 
 ];
 
@@ -122,14 +122,9 @@ console.log(data[0].name);
 
 console.log(data[1].contact);
 
+let str = " this is a String"
 
-
-
-
-
-
-
-
+console.log(str); 
 
 
 
