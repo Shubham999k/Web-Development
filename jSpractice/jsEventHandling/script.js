@@ -33,6 +33,7 @@ document.getElementById("paraColor").addEventListener("change", ChangeParaColor)
 function ChangeParaColor() {
     var color = document.getElementById("paraColor").value;
     document.getElementById("para1").style.color = color;
+    document.getElementById("para2").style.color = color;
 }
 
 
