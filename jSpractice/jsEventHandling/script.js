@@ -27,7 +27,6 @@ function ChangeTextColor() {
     var color = document.getElementById("textColor").value;
     document.getElementById("H1").style.color = color;
 }
-
 document.getElementById("paraColor").addEventListener("change", ChangeParaColor);
 
 function ChangeParaColor() {
@@ -35,10 +34,6 @@ function ChangeParaColor() {
     document.getElementById("para1").style.color = color;
     document.getElementById("para2").style.color = color;
 }
-
-
-
-
 
 function resetAll() {
     window.location.reload();

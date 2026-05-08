@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+#container{
+
+    /* border: 2px solid rgb(230, 26, 132); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#bulb{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 5px solid rgb(255, 251, 0);
+    box-shadow: yellow 0px 0px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.box{
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid rgb(178, 48, 70);
+}
+#boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#redBox{
+    background-color: red;
+}
+#greenBox{
+    background-color: rgb(25, 237, 54);
+}
+#blueBox{
+    background-color: blue;
+}
+#redBox:hover,#greenBox:hover,#blueBox:hover{
+     box-shadow: 5px 5px 10px rgb(46, 47, 46);
+}
