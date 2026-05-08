@@ -11,7 +11,7 @@ form {
     padding: 15px;
     border-radius: 10px;
     background-color: rgb(225, 208, 240);
-    box-shadow: 2px 2px 5px rgb(46, 47, 46);
+    box-shadow: 1px 1px 5px rgb(46, 47, 46);
 
 
     input {
@@ -30,7 +30,7 @@ button {
     background-color: blueviolet;
     color: white;
     cursor: pointer;
-    box-shadow: 2px 2px 5px rgb(46, 47, 46);
+    box-shadow: 1px 1px 5px rgb(46, 47, 46);
 
 }
 

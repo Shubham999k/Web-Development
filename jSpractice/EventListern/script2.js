@@ -11,11 +11,12 @@ document.querySelector("form").addEventListener("submit", (event) => {
         password: ps
 
     }
+    console.log(dataPacket);
     document.getElementById("firstName").value = "";
     document.getElementById("email").value = "";
     document.getElementById("password").value = "";
 
-    console.log(dataPacket);
+
 
 })
 
@@ -30,8 +31,7 @@ document.querySelector("form").addEventListener("reset", (event) => {
 
 document.addEventListener("keydown", (event) => {
     let keyPress = (event.key);
-    log(keyPress);
-    keyPress === "E"
+    keyPress === "Escapse" && window.location.reload();
 
 })
 
