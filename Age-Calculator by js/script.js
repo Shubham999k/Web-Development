@@ -13,4 +13,10 @@ document.querySelector("form").addEventListener("submit", (event) => {
     document.getElementById("Age").innerText =
         `Your Age is : ${Age} Years`;
 
+    document.querySelector("div").addEventListener("mouseleave", () => {
+
+        location.reload();
+
+    });
+
 })
