@@ -16,19 +16,21 @@
   </head>
 
   <body
-    class="min-vh-100 d-flex justify-content-center align-items-center overflow-hidden"
+    class="min-vh-100 d-flex justify-content-center align-items-center overflow-hidden p-2"
   >
     <!-- ================= BG IMAGE ================= -->
 
     <img
       src="CalculatorBGImage.png"
       alt=""
-      class="position-fixed top-0 start-0 w-100 h-100 z-n1"
+      class="position-fixed top-0 start-0 w-100 h-100 z-n1 object-fit-cover"
     />
 
     <!-- ================= CALCULATOR ================= -->
 
-    <div class="calc rounded-5 p-2 shadow-lg d-grid gap-1 w-25">
+    <div
+      class="calc rounded-5 p-2 w-25 shadow-lg d-grid gap-1 col-11 col-sm-9 col-md-7 col-lg-5 col-xl-4"
+    >
       <!-- ================= DISPLAY ================= -->
 
       <input
@@ -36,7 +38,7 @@
         id="display"
         value="0"
         readonly
-        class="form-control rounded-top-5 rounded-bottom-0 text-end pe-4 fs-1 border border-2 shadow-sm border-dark-subtle py-5 bg-success-subtle"
+        class="form-control rounded-top-5 rounded-bottom-0 text-end pe-4 fs-2 border border-2 shadow-sm border-dark-subtle py-4 py-md-5 bg-success-subtle"
       />
 
       <!-- ================= BUTTON AREA ================= -->
@@ -45,12 +47,12 @@
         class="p-3 rounded-bottom-5 bg-danger-subtle border border-2 border-dark-subtle shadow-sm"
       >
         <div class="container-fluid">
-          <div class="row g-4">
+          <div class="row g-3">
             <!-- Row 1 -->
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="allClear()"
               >
                 AC
@@ -59,7 +61,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="clearLast()"
               >
                 C
@@ -68,7 +70,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('%')"
               >
                 %
@@ -77,7 +79,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-warning rounded-circle w-100 fs-3 h-100"
+                class="btn btn-warning rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('/')"
               >
                 /
@@ -88,7 +90,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('7')"
               >
                 7
@@ -97,7 +99,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('8')"
               >
                 8
@@ -106,7 +108,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('9')"
               >
                 9
@@ -115,7 +117,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-warning rounded-circle w-100 fs-3 h-100"
+                class="btn btn-warning rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('*')"
               >
                 *
@@ -126,7 +128,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('4')"
               >
                 4
@@ -135,7 +137,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('5')"
               >
                 5
@@ -144,7 +146,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('6')"
               >
                 6
@@ -153,7 +155,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-warning rounded-circle w-100 fs-3 h-100"
+                class="btn btn-warning rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('-')"
               >
                 -
@@ -164,7 +166,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('1')"
               >
                 1
@@ -173,7 +175,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('2')"
               >
                 2
@@ -182,7 +184,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('3')"
               >
                 3
@@ -191,7 +193,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-warning rounded-circle w-100 fs-3 h-100"
+                class="btn btn-warning rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('+')"
               >
                 +
@@ -202,7 +204,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('0')"
               >
                 0
@@ -211,7 +213,7 @@
 
             <div class="col-3">
               <button
-                class="btn btn-light rounded-circle w-100 fs-3 h-100"
+                class="btn btn-light rounded-circle w-100 fs-5 fs-md-3 py-3"
                 onclick="appendValue('.')"
               >
                 .
@@ -220,7 +222,7 @@
 
             <div class="col-6">
               <button
-                class="btn btn-success rounded-pill w-100 fs-3 h-100"
+                class="btn btn-success rounded-pill w-100 fs-5 fs-md-3 py-3"
                 onclick="calculateResult()"
               >
                 =
