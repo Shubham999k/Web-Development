@@ -1,0 +1,15 @@
+/* ========================== style.css ========================== */
+
+.calculatorContainer {
+
+    width: 380px;
+}
+
+.calcBtn {
+
+    height: 70px;
+
+    font-size: 26px;
+
+    font-weight: bold;
+}
