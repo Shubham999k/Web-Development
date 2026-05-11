@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #dbeafe,
+    #eff6ff
+  );
+}
+
+.game-card {
+  width: 100%;
+  max-width: 500px;
+}
