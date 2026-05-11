@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #fee2e2,
+    #fff1f2
+  );
+}
+
+.salary-card {
+  width: 100%;
+  max-width: 500px;
+}
