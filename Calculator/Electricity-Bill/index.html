@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Electricity Bill Calculator</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body
+    class="min-vh-100 d-flex justify-content-center align-items-center bg-light p-3"
+  >
+    <!-- ================= MAIN CARD ================= -->
+
+    <div class="card shadow-lg border-0 rounded-5 p-4 bill-card">
+      <!-- ================= HEADING ================= -->
+
+      <h1 class="text-center fw-bold mb-2 text-warning">
+        Electricity Bill Calculator
+      </h1>
+
+      <p class="text-center text-secondary mb-4">
+        Calculate your electricity bill easily ⚡
+      </p>
+
+      <!-- ================= INPUT ================= -->
+
+      <div class="mb-4">
+        <label class="form-label fw-semibold">
+          Enter Electricity Units
+        </label>
+
+        <input
+          type="number"
+          id="units"
+          class="form-control form-control-lg rounded-4"
+          placeholder="Enter units"
+        />
+      </div>
+
+      <!-- ================= BUTTON ================= -->
+
+      <button
+        class="btn btn-warning btn-lg rounded-4 fw-bold w-100"
+        onclick="calculateBill()"
+      >
+        Calculate Bill
+      </button>
+
+      <!-- ================= RESULT ================= -->
+
+      <div
+        id="result"
+        class="alert alert-light rounded-4 mt-4 text-center fw-bold d-none"
+      >
+      </div>
+
+      <!-- ================= SLAB INFO ================= -->
+
+      <div class="mt-4">
+        <h5 class="fw-bold mb-3">
+          Bill Rates 📋
+        </h5>
+
+        <ul class="list-group rounded-4">
+          <li class="list-group-item">
+            0 - 100 Units → ₹5 / unit
+          </li>
+
+          <li class="list-group-item">
+            101 - 300 Units → ₹7 / unit
+          </li>
+
+          <li class="list-group-item">
+            301+ Units → ₹10 / unit
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

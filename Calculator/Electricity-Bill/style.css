@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #fef3c7,
+    #fff7ed
+  );
+}
+
+.bill-card {
+  width: 100%;
+  max-width: 500px;
+}
