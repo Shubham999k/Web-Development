@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(
+    135deg,
+    #dcfce7,
+    #f0fdf4
+  );
+}
+
+.travel-card {
+  width: 100%;
+  max-width: 500px;
+}
