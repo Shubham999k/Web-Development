@@ -9,7 +9,7 @@ function submit() {
 
   document.querySelectorAll(".error").forEach((element) => {
     element.innerText = "";
-  });
+  }); 
 
   if (!/^[A-Za-z\s]+$/.test(fn)) {
     document.getElementById("nameError").innerText = "Invalid Full Name";
@@ -22,4 +22,5 @@ function submit() {
   if (!/^[6-9]\d{9}$/.test(ph)) {
     document.getElementById("phoneError").innerText = "Invalid Phone";
   }
+
 }
