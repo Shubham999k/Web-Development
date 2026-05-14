@@ -138,7 +138,6 @@ form.addEventListener("submit", (event) => {
   const marksPattern =
     /^(100|[0-9]{1,2}(\.[0-9]+)?|[A-Fa-f])$/;
 
-
   // FULL NAME
 
 
