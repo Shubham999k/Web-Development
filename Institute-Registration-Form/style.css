@@ -1,89 +1,209 @@
-main{
-    margin-top: 100px;
+main {
+    margin-top: 30px;
 }
 
-body
-{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+i{
+    color:blueviolet;
+}
+body {
     background: #f4f7fb;
     font-family: Arial, sans-serif;
 }
 
-.main-card
-{
-    border-radius: 24px;
-    overflow: hidden;
-    border: none;
+/* ========================= */
+/* Navbar */
+/* ========================= */
+
+.navbar {
+    padding: 14px 0;
 }
 
+/* ========================= */
+/* Card */
+/* ========================= */
+
+.card {
+    border-radius: 24px;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease;
+}
+
+/* ========================= */
+/* Form Controls */
+/* ========================= */
+
 .form-control,
-.form-select
-{
+.form-select {
     height: 55px;
     border-radius: 14px;
     border: 2px solid #dfe6ee;
-    transition: 0.3s;
+    padding-left: 14px;
+    transition: 0.3s ease;
+    font-size: 15px;
 }
 
-textarea.form-control
-{
+textarea.form-control {
     height: 120px;
+    resize: none;
+    padding-top: 14px;
 }
+
+/* ========================= */
+/* Focus Effect */
+/* ========================= */
 
 .form-control:focus,
-.form-select:focus
-{
+.form-select:focus {
     border-color: #0d6efd;
-    box-shadow: none;
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.2);
 }
 
-.valid
-{
+/* ========================= */
+/* Input Group */
+/* ========================= */
+
+.input-group-text {
+    border-radius: 14px 0 0 14px;
+    border: 2px solid #dfe6ee;
+    background: white;
+}
+
+/* ========================= */
+/* Section Titles */
+/* ========================= */
+
+h3 {
+    color: #0d6efd;
+    margin-bottom: 4px;
+}
+
+/* ========================= */
+/* Error Text */
+/* ========================= */
+
+.text-danger {
+    font-size: 14px;
+    display: block;
+    margin-top: 6px;
+}
+
+/* ========================= */
+/* Radio Buttons */
+/* ========================= */
+
+.form-check-input {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.form-check-label {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* ========================= */
+/* Buttons */
+/* ========================= */
+
+button {
+    border-radius: 14px !important;
+    font-size: 16px !important;
+    transition: 0.3s ease !important;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* ========================= */
+/* Valid State */
+/* ========================= */
+
+.valid {
     border-color: #198754 !important;
 }
 
-.invalid
-{
+/* ========================= */
+/* Invalid State */
+/* ========================= */
+
+.invalid {
     border-color: #dc3545 !important;
 }
 
-.error-text
-{
-    color: #dc3545;
-    font-size: 14px;
-    margin-top: 5px;
+/* ========================= */
+/* Section Cards Feel */
+/* ========================= */
+
+.border-start {
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
-.success-text
-{
-    color: #198754;
-    font-size: 14px;
-    margin-top: 5px;
+/* ========================= */
+/* Placeholder */
+/* ========================= */
+
+::placeholder {
+    color: #adb5bd !important;
 }
 
-.section-title
-{
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    color: #0d6efd;
+/* ========================= */
+/* Scrollbar */
+/* ========================= */
+
+::-webkit-scrollbar {
+    width: 8px;
 }
 
-.form-check-input
-{
-    transform: scale(1.2);
+::-webkit-scrollbar-thumb {
+    background: #0d6efd;
+    border-radius: 10px;
 }
 
-.submit-btn
-{
-    height: 55px;
-    border-radius: 14px;
-    font-size: 18px;
-    font-weight: bold;
+/* ========================= */
+/* Animation */
+/* ========================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.reset-btn
-{
-    height: 55px;
-    border-radius: 14px;
-    font-size: 18px;
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 24px !important;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .d-flex.gap-3 {
+        flex-direction: column;
+    }
 }
