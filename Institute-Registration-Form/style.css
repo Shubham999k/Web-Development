@@ -7,9 +7,9 @@ main {
     padding: 0;
     box-sizing: border-box;
 }
-
+/* icons coloring */
 i {
-    color: blueviolet;
+    color: blue;
 }
 
 body {
@@ -124,40 +124,4 @@ button:hover {
 ::-webkit-scrollbar-thumb {
     background: #0d6efd;
     border-radius: 10px;
-}
-
-/* Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .card-body {
-        padding: 24px !important;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 22px;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    .d-flex.gap-3 {
-        flex-direction: column;
-    }
 }
