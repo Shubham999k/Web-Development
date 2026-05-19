@@ -7,7 +7,7 @@ async function getdata(value) {
                 console.log("Data Sent", value)
                 resolve("Query Solved")
             }
-        }, 2000)
+        }, 2000) 
     })
 }
 
