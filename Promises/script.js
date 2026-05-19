@@ -27,3 +27,6 @@ await getdata(2)
 await getdata(3)
 await getdata(4)
 await getdata(5)
+
+
+console.log("new update");
