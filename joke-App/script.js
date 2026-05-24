@@ -4,7 +4,7 @@ async function GetNewJoke(){
     const data = await response.json();
     
     document.getElementById("setup").innerText = data.setup;
-    document.getElementById("punchline").innerText = data.punchline;
+    document.getElementById("punchline").innerText = data.punchline; 
 
 
 }
