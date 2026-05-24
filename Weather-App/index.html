@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joke-App</title>
+    <title>Weather-App</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,29 +12,34 @@
   </head>
   <body>
     <header class="bg-primary w-100 text-center py-2 text-white">
-      <h2>Mausem Ka Haal 🔜 💖 </h2>
+      <h2>Mausem Ka Haal 🔜 💖</h2>
     </header>
 
-    <main class="my-3 ">
-      <div class="container w-75 shadow-lg border fs-5 fw-medium p-3 bg-primary-subtle rounded rounded-3 border-top border-3 border-info">
+    <div
+      class="w-100 d-flex align-items-center justify-content-center gap-4 mt-3"
+    >
+      <div>
+        <img src="./image.png" height="550" alt="" class="border" />
+      </div>
+      <div class="d-grid gap-4 bg-info-subtle h-100 border card p-5 border border-5 border-info rounded-4">
         <div>
-          <p id="setup" class="text-center text-success">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            possimus nostrum obcaecati aliquam earum non expedita quidem
-            veritatis sapiente. Obcaecati provident alias adipisci cupiditate
-            sit laboriosam modi eius, quam labore!
-          </p>
-          <p id="punchline" class="text-center text-danger">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-            laudantium fugiat rerum molestias incidunt vero nisi blanditiis 
-          </p>
-          <div class="d-flex justify-content-center">
-            <button onclick="GetNewJoke()" class="btn btn-outline-primary fw-bold">Get New Joke !!!</button>
-          </div>
+          <label for="city">City Name:</label>
+          <input
+            type="text"
+            id="cityName"
+            class="form-control bg-transparent border border-2 border-danger"
+            placeholder="Enter Your City"
+          />
+        </div>
+        <button onclick="getWeather()" class="btn btn-outline-success">
+          Get Weather
+        </button>
+
+        <div>
+          <label>Temp : <span id="Temperature">🔥</span>ºC</label>
         </div>
       </div>
-    </main>
-
+    </div>
     <script src="script.js"></script>
-  </body> 
+  </body>
 </html>
