@@ -1,0 +1,61 @@
+[
+    {
+        "Country": "United States",
+        "Currency_Code": "USD",
+        "Country_Code": "US"
+    },
+
+    {
+        "Country": "India",
+        "Currency_Code": "INR",
+        "Country_Code": "IN"
+    },
+
+    {
+        "Country": "United Kingdom",
+        "Currency_Code": "GBP",
+        "Country_Code": "GB"
+    },
+
+    {
+        "Country": "Japan",
+        "Currency_Code": "JPY",
+        "Country_Code": "JP"
+    },
+
+    {
+        "Country": "Australia",
+        "Currency_Code": "AUD",
+        "Country_Code": "AU"
+    },
+
+    {
+        "Country": "Canada",
+        "Currency_Code": "CAD",
+        "Country_Code": "CA"
+    },
+
+    {
+        "Country": "China",
+        "Currency_Code": "CNY",
+        "Country_Code": "CN"
+    },
+
+    {
+        "Country": "Russia",
+        "Currency_Code": "RUB",
+        "Country_Code": "RU"
+    },
+
+    {
+        "Country": "Singapore",
+        "Currency_Code": "SGD",
+        "Country_Code": "SG"
+    },
+
+    {
+        "Country": "New Zealand",
+        "Currency_Code": "NZD",
+        "Country_Code": "NZ"
+    }
+]

@@ -1,0 +1,468 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg,
+            #0f172a,
+            #1e3a8a,
+            #0ea5e9);
+}
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full Screen */
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background Video */
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: -2;
+}
+
+/* Dark Overlay */
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  z-index: -1;
+}
+
+/* Main Container */
+
+.main-container {
+  height: 100vh;
+}
+
+/* Layout */
+
+.weather-layout {
+  height: 100%;
+}
+
+/* Left Side */
+
+.left-side {
+  height: 100vh;
+}
+
+/* Right Side */
+
+.right-side {
+  height: 100vh;
+}
+
+/* Weather Card */
+
+.weather-card {
+  width: 100%;
+  max-width: 400px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  color: white;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Weather Icon */
+
+.weather-icon {
+  width: 90px;
+}
+
+/* Title */
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.sub-title {
+  color: #ddd;
+}
+
+/* Input */
+
+.custom-input {
+  height: 55px;
+
+  border-radius: 15px;
+
+  border: none;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  color: white;
+}
+
+.custom-input::placeholder {
+  color: #eee;
+}
+
+.custom-input:focus {
+  background: rgba(255, 255, 255, 0.25);
+
+  color: white;
+
+  box-shadow: none;
+}
+
+/* Button */
+
+.search-btn {
+  height: 55px;
+
+  border-radius: 15px;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  transform: scale(1.03);
+}
+
+/* Weather Result */
+
+.weather-result {
+  width: 100%;
+  max-width: 800px;
+
+  color: white;
+}
+
+/* Temperature */
+
+.weather-data h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.weather-data p {
+  font-size: 1.5rem;
+}
+
+/* Info Box */
+
+.info-box {
+  padding: 25px;
+
+  text-align: center;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+}
+
+.info-box i {
+  font-size: 2rem;
+
+  margin-bottom: 10px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 991px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .left-side,
+  .right-side {
+    height: auto;
+
+    padding: 30px 15px;
+  }
+
+  .weather-data h1 {
+    font-size: 4rem;
+  }
+}
+/* Main Layout */
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.weather-layout {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left Side */
+
+.left-side {
+    height: 100vh;
+}
+
+/* Right Side */
+
+.right-side {
+    height: 100vh;
+}
+
+/* Left Card */
+
+
+.weather-card {
+    width: 100%;
+    max-width: 420px;
+
+    border-radius: 28px;
+
+    backdrop-filter: blur(15px);
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Right Result */
+
+.weather-result {
+    width: 90%;
+    max-width: 700px;
+}
+
+/* Weather Icon */
+
+.weather-icon {
+    width: 95px;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+/* Title */
+
+.title {
+    color: white;
+
+    font-size: 2rem;
+
+    font-weight: bold;
+}
+
+.sub-title {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Input */
+
+.custom-input {
+    height: 52px;
+
+    border: none;
+
+    color: white;
+
+    border-radius: 14px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-input:focus {
+    color: white;
+
+    box-shadow: none;
+
+    border: 1px solid white;
+
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Button */
+
+.search-btn {
+    height: 52px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    transform: scale(1.02);
+}
+
+/* Temperature Box */
+
+.weather-data {
+    padding: 35px;
+
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.weather-data h1 {
+    color: white;
+
+    font-size: 5rem;
+
+    font-weight: bold;
+}
+
+.weather-data p {
+    margin-top: 10px;
+
+    font-size: 1.2rem;
+
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Info Cards */
+
+.info-box {
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-box i {
+    color: white;
+
+    font-size: 2rem;
+}
+
+.info-box h5 {
+    color: white;
+
+    margin-top: 15px;
+}
+
+.info-box p {
+    color: rgba(255, 255, 255, 0.8);
+
+    margin-bottom: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+    body {
+        overflow-y: auto;
+    }
+
+    .weather-layout {
+        height: auto;
+    }
+
+    .left-side,
+    .right-side {
+        height: auto;
+
+        padding: 30px 0;
+    }
+
+    .weather-result {
+        width: 100%;
+    }
+
+    .weather-data h1 {
+        font-size: 3.5rem;
+    }
+
+}
