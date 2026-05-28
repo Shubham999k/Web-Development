@@ -115,7 +115,7 @@ document.getElementById("swapBtn")
             updateFlags();
 
         }
-    );
+    ); 
 
 /* Convert */
 
